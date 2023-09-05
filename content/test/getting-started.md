@@ -1,4 +1,3 @@
-  GNU nano 4.8                        jelle.md                                  
 ---
 title: "Sure!!"
 weight: 1
