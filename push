@@ -1,1 +1,1 @@
-git add --all && git commit -m "default message" && git push
+hugo && git add --all && git commit -m "default message" && git push

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on My Documentation Site</title>
+    <title>News on Cybersecurity Hacking Documentation</title>
     <link>http://localhost/posts/</link>
-    <description>Recent content in News on My Documentation Site</description>
+    <description>Recent content in News on Cybersecurity Hacking Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -23,9 +23,7 @@ Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclima
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/posts/hello_geekdoc/</guid>
-      <description>This is the first release of the Geekdoc theme.
-Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture. Ornateness bland it ex enc, est yeti am bongo detract re. Pro ad prompts feud gait, quid exercise emeritus bis e. In pro quints consequent, denim fastidious copious quo ad. Stet probates in duo.
-Amalia id per in minimum facility, quid facet modifier ea ma. Ill um select ma ad, en ferric patine sentient vim.</description>
+      <description> Penetration Testing: A Hands-On Introduction to Hacking The Web Application Hackers Handbook Computer Security: A Hands-on Approach Black Hat Python Buffer Overflow Attacks - Detect Exploit Prevent Cross Site Scripting Attacks Xss Exploits and Defense Cybersecurity - Attack and Defense Strategies Fuzzing Brute Force Vulnerability Discovery Hacking Exposed Linux Hacking The Art of Exploitation Kali Linux an Ethical Hackers Cookbook Mastering Kali Linux for Advanced Penetration Testing Penetration Testing A Hands On Introduction to Hacking Python Penetration Testing Essentials RTFM red team field manual TCP IP Guide Oct 2005 The Basics of Hacking and Penetration Testing The Basics of Web Hacking - Tools and Techniques to Attack the Web Understanding Network Hacks_ Attack and Defense With Python Violent Python - A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers Wireshark for Security Professionals Wireshark - Practical packet analysis to Solve Real World Problems </description>
     </item>
     
   </channel>

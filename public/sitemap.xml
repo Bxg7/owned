@@ -12,12 +12,6 @@
   </url><url>
     <loc>http://localhost/docs/getting-started/</loc>
   </url><url>
-    <loc>http://localhost/docs/test/getting-started/</loc>
-  </url><url>
-    <loc>http://localhost/docs/jelle/</loc>
-  </url><url>
-    <loc>http://localhost/test/htb/</loc>
-  </url><url>
     <loc>http://localhost/posts/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -87,8 +81,6 @@
     <loc>http://localhost/toc-tree/level-2/level-2-2/</loc>
   </url><url>
     <loc>http://localhost/tags/</loc>
-  </url><url>
-    <loc>http://localhost/test/</loc>
   </url><url>
     <loc>http://localhost/toc-tree/</loc>
   </url>
