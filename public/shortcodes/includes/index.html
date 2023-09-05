@@ -65,7 +65,7 @@ Name Usage default file path to the included file relative to the hugo root empt
       "url" : "http://localhost/shortcodes/includes/",
       "headline": "Includes",
       "description": "Include shortcode can include files of different types. By specifying a language, the included file will have syntax highlighting.\nShortcode {{\u003c include file=\u0022relative\/path\/from\/hugo\/root\u0022 language=\u0022go\u0022 markdown=[false|true] \u003e}} Attributes:\nName Usage default file path to the included file relative to the hugo root empty value language* language for syntax highlighting empty value markdown included file is markdown false options highlighting options linenos=table * if not set, the content will be rendered as plain HTML",
-      "wordCount" : "150",
+      "wordCount" : "185",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1575,7 +1575,32 @@ If you include markdown files that should not get a menu entry, place them outsi
 
 
 
-<div class="gdoc-include"></div>
+<div class="gdoc-include"><div class="flex align-center gdoc-page__anchorwrap">
+    <h4 id="test-table"
+    >
+        Test Table
+    </h4>
+    <a data-clipboard-text="http://localhost/shortcodes/includes/#test-table" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Test Table" aria-label="Anchor to: Test Table" href="#test-table">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+<div class="table-wrap"> <table>
+<thead>
+<tr>
+<th>Head 1</th>
+<th>Head 2</th>
+<th>Head 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
 
 <!-- spellchecker-enable -->
 <div class="flex align-center gdoc-page__anchorwrap">
@@ -1596,7 +1621,13 @@ If you include markdown files that should not get a menu entry, place them outsi
 
 
 
-<div class="gdoc-include"></div>
+<div class="gdoc-include"><h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+</div>
 
 
   </article>
