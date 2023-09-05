@@ -1,5 +1,5 @@
 baseURL = "http://localhost"
-title = "My Documentation Site"
+title = "Cybersecurity Hacking Documentation"
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false

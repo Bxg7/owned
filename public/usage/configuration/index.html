@@ -12,8 +12,9 @@
 <meta name="generator" content="Hugo 0.118.2">
 
 
+  <meta name="description" content="Site configuration Page configuration Site configuration TOML baseURL = &#34;http://localhost&#34; title = &#34;Geekdocs&#34; theme = &#34;hugo-geekdoc&#34; # Required to get well formatted code blocks pygmentsUseClasses = true pygmentsCodeFences = true disablePathToLower = true enableGitInfo = true [markup] [markup.goldmark.renderer] # Needed for mermaid shortcode unsafe = true [markup.tableOfContents] startLevel = 1 endLevel = 9 [params] # (Optional, default 6) Set how many table of contents levels to be showed on page." />
 
-    <title>Docs | My Documentation Site</title>
+    <title>Configuration | My Documentation Site</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -34,33 +35,36 @@
     
   <meta
     property="og:title"
-    content="Docs"
+    content="Configuration"
   />
   <meta property="og:site_name" content="My Documentation Site" />
+  <meta property="og:description" content="Site configuration Page configuration Site configuration TOML baseURL = &#34;http://localhost&#34; title = &#34;Geekdocs&#34; theme = &#34;hugo-geekdoc&#34; # Required to get well formatted code blocks pygmentsUseClasses = true pygmentsCodeFences = true disablePathToLower = true enableGitInfo = true [markup] [markup.goldmark.renderer] # Needed for mermaid shortcode unsafe = true [markup.tableOfContents] startLevel = 1 endLevel = 9 [params] # (Optional, default 6) Set how many table of contents levels to be showed on page." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost/docs/" />
+<meta property="og:url" content="http://localhost/usage/configuration/" />
 
-<meta property="article:section" content="Docs" />
+<meta property="article:section" content="Usage" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Docs" />
+<meta name="twitter:title" content="Configuration" />
+  <meta name="twitter:description" content="Site configuration Page configuration Site configuration TOML baseURL = &#34;http://localhost&#34; title = &#34;Geekdocs&#34; theme = &#34;hugo-geekdoc&#34; # Required to get well formatted code blocks pygmentsUseClasses = true pygmentsCodeFences = true disablePathToLower = true enableGitInfo = true [markup] [markup.goldmark.renderer] # Needed for mermaid shortcode unsafe = true [markup.tableOfContents] startLevel = 1 endLevel = 9 [params] # (Optional, default 6) Set how many table of contents levels to be showed on page." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Docs",
-      "name": "Docs",
-      "url" : "http://localhost/docs/",
-      "headline": "Docs",
-      "wordCount" : "0",
+      "articleSection": "Usage",
+      "name": "Configuration",
+      "url" : "http://localhost/usage/configuration/",
+      "headline": "Configuration",
+      "description": "Site configuration Page configuration Site configuration TOML baseURL = \u0022http:\/\/localhost\u0022 title = \u0022Geekdocs\u0022 theme = \u0022hugo-geekdoc\u0022 # Required to get well formatted code blocks pygmentsUseClasses = true pygmentsCodeFences = true disablePathToLower = true enableGitInfo = true [markup] [markup.goldmark.renderer] # Needed for mermaid shortcode unsafe = true [markup.tableOfContents] startLevel = 1 endLevel = 9 [params] # (Optional, default 6) Set how many table of contents levels to be showed on page.",
+      "wordCount" : "1250",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost/docs/"
+          "@id": "http://localhost/usage/configuration/"
       },
       "copyrightHolder" : "My Documentation Site",
       "copyrightYear" : "0001",
@@ -144,7 +148,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="http://localhost/docs/" rel="canonical" type="text/html" />
+  <link href="http://localhost/usage/configuration/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -394,7 +398,7 @@
                 <span class="flex">
                   <a
                     href="/usage/configuration/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Configuration
                   </a>
@@ -1587,7 +1591,15 @@
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Documentation</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Docs</span><meta itemprop='position' content='2' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Documentation</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/usage/' href='/usage/'><span itemprop='name'>Usage</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Configuration</span><meta itemprop='position' content='3' /></li>
+  
+
   
 
   
@@ -1603,8 +1615,324 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Docs</h1>
-    
+    <h1>Configuration</h1>
+    <!-- spellchecker-disable -->
+<div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#site-configuration">Site configuration</a></li>
+        <li><a href="#page-configuration">Page configuration</a></li>
+      </ul></nav>
+      <hr />
+    </div>
+<!-- spellchecker-enable -->
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="site-configuration"
+    >
+        Site configuration
+    </h2>
+    <a data-clipboard-text="http://localhost/usage/configuration/#site-configuration" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Site configuration" aria-label="Anchor to: Site configuration" href="#site-configuration">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+
+
+
+<div class="gdoc-tabs">
+    <input
+      type="radio"
+      class="gdoc-tabs__control hidden"
+      name="tabs-site-config"
+      id="tabs-site-config-0"
+      checked="checked"
+    />
+    <label for="tabs-site-config-0" class="gdoc-tabs__label">
+      TOML
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Toml" data-lang="Toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://localhost&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Geekdocs&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;hugo-geekdoc&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Required to get well formatted code blocks</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pygmentsUseClasses</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pygmentsCodeFences</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">disablePathToLower</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">enableGitInfo</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">renderer</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># Needed for mermaid shortcode</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">9</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default 6) Set how many table of contents levels to be showed on page.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># Use false to hide ToC, note that 0 will default to 6 (https://gohugo.io/functions/default/)</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># You can also specify this parameter per page in front matter.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocToC</span> <span class="p">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default static/brand.svg) Set the path to a logo for the Geekdoc</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># relative to your &#39;static/&#39; folder.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocLogo</span> <span class="p">=</span> <span class="s2">&#34;logo.png&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default false) Render menu from data file im &#39;data/menu/main.yaml&#39;.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocMenuBundle</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default true) Show page navigation links at the bottom of each</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># docs page (bundle menu only).</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocNextPrev</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default true) Show a breadcrumb navigation bar at the top of each docs page.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># You can also specify this parameter per page in front matter.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocBreadcrumb</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default none) Set source repository location. Used for &#39;Edit this page&#39; links.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># You can also specify this parameter per page in front matter.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocRepo</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/thegeeklab/hugo&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default none) Enable &#39;Edit this page&#39; links. Requires &#39;GeekdocRepo&#39; param</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># and path must point to &#39;content&#39; directory of repo.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># You can also specify this parameter per page in front matter.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocEditPath</span> <span class="p">=</span> <span class="s2">&#34;edit/master/exampleSite/content&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default true) Enables search function with flexsearch.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># Index is built on the fly and might slowdown your website.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocSearch</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default false) Display search results with the parent folder as prefix. This</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># option allows you to distinguish between files with the same name in different folders.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># NOTE: This parameter only applies when &#39;geekdocSearch = true&#39;.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocSearchShowParent</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default none) Add a link to your Legal Notice page to the site footer.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># It can be either a remote url or a local file path relative to your content directory.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocLegalNotice</span> <span class="p">=</span> <span class="s2">&#34;https://blog.example.com/legal&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default none) Add a link to your Privacy Policy page to the site footer.</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># It can be either a remote url or a local file path relative to your content directory.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocPrivacyPolicy</span> <span class="p">=</span> <span class="s2">&#34;/privacy&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default true) Add an anchor link to headlines.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocAnchor</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c"># (Optional, default true) Copy anchor url to clipboard on click.</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocAnchorCopy</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div>
+    </div>
+    <input
+      type="radio"
+      class="gdoc-tabs__control hidden"
+      name="tabs-site-config"
+      id="tabs-site-config-1"
+      
+    />
+    <label for="tabs-site-config-1" class="gdoc-tabs__label">
+      YAML
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">baseURL</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;http://localhost&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Geekdocs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;hugo-geekdoc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Required to get well formatted code blocks</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">pygmentsUseClasses</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">pygmentsCodeFences</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">disablePathToLower</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">enableGitInfo</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">markup</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">goldmark</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># Needed for mermaid shortcode</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">renderer</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">unsafe</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">tableOfContents</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">startLevel</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">endLevel</span><span class="p">:</span><span class="w"> </span><span class="m">9</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default 6) Set how many table of contents levels to be showed on page.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Use false to hide ToC, note that 0 will default to 6 (https://gohugo.io/functions/default/)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># You can also specify this parameter per page in front matter.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocToC</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default static/brand.svg) Set the path to a logo for the Geekdoc</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># relative to your &#39;static/&#39; folder.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocLogo</span><span class="p">:</span><span class="w"> </span><span class="l">logo.png</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default false) Render menu from data file im &#39;data/menu/main.yaml&#39;.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># See also https://geekdocs.de/usage/menus/#bundle-menu</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocMenuBundle</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default true) Show page navigation links at the bottom of each</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># docs page (bundle menu only).</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocNextPrev</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default true) Show a breadcrumb navigation bar at the top of each docs page.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># You can also specify this parameter per page in front matter.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocBreadcrumb</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default none) Set source repository location. Used for &#39;Edit this page&#39; links.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># You can also specify this parameter per page in front matter.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocRepo</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com/thegeeklab/hugo-geekdoc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default none) Enable &#34;Edit this page&#34; links. Requires &#39;GeekdocRepo&#39; param</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># and path must point to &#39;content&#39; directory of repo.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># You can also specify this parameter per page in front matter.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocEditPath</span><span class="p">:</span><span class="w"> </span><span class="l">edit/master/exampleSite/content</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default true) Enables search function with flexsearch.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Index is built on the fly and might slowdown your website.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocSearch</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default false) Display search results with the parent folder as prefix. This</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># option allows you to distinguish between files with the same name in different folders.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># NOTE: This parameter only applies when &#39;geekdocSearch: true&#39;.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocSearchShowParent</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default none) Add a link to your Legal Notice page to the site footer.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># It can be either a remote url or a local file path relative to your content directory.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocLegalNotice</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://blog.example.com/legal&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default none) Add a link to your Privacy Policy page to the site footer.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># It can be either a remote url or a local file path relative to your content directory.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocPrivacyPolicy</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/privacy&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default true) Add an anchor link to headlines.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocAnchor</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># (Optional, default true) Copy anchor url to clipboard on click.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">geekdocAnchorCopy</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div>
+    </div>
+</div>
+
+<div class="flex align-center gdoc-page__anchorwrap">
+    <h2 id="page-configuration"
+    >
+        Page configuration
+    </h2>
+    <a data-clipboard-text="http://localhost/usage/configuration/#page-configuration" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Page configuration" aria-label="Anchor to: Page configuration" href="#page-configuration">
+        <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+    </a>
+</div>
+
+
+
+<div class="gdoc-tabs">
+    <input
+      type="radio"
+      class="gdoc-tabs__control hidden"
+      name="tabs-page-config"
+      id="tabs-page-config-0"
+      checked="checked"
+    />
+    <label for="tabs-page-config-0" class="gdoc-tabs__label">
+      TOML
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Toml" data-lang="Toml"><span class="line"><span class="cl"><span class="c"># Set type to &#39;posts&#39; if you want to render page as blogpost</span>
+</span></span><span class="line"><span class="cl"><span class="nx">type</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set page weight to re-arrange items in file-tree menu.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set how many table of contents levels to be showed on page.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocToC</span> <span class="p">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set a description for the current page. This will be shown in toc-trees objects.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocDescription</span> <span class="p">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Show a breadcrumb navigation bar at the top of each docs page.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocBreadcrumb</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set source repository location.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocRepo</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/thegeeklab/hugo-geekdoc&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Enable &#34;Edit this page&#34; links. Requires &#39;GeekdocRepo&#39; param and path must point</span>
+</span></span><span class="line"><span class="cl"><span class="c"># to &#39;content&#39; directory of repo.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocEditPath</span> <span class="p">=</span> <span class="s2">&#34;edit/master/exampleSite/content&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Used for &#39;Edit this page&#39; link, set to &#39;.File.Path&#39; by default.</span>
+</span></span><span class="line"><span class="cl"><span class="c"># Can be overwritten by a path relative to &#39;geekdocEditPath&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocFilePath</span> <span class="p">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set to mark page as flat section (file-tree menu only).</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocFlatSection</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set true to hide page or section from side menu (file-tree menu only).</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocHidden</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set false to show this page as a file-tree menu entry when you want it to be hidden in the sidebar.</span>
+</span></span><span class="line"><span class="cl"><span class="c"># NOTE: Only applies when &#39;geekdocHidden = true&#39;.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocHiddenTocTree</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Set to true to make a section foldable in side menu.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocCollapseSection</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Add an anchor link to headlines.</span>
+</span></span><span class="line"><span class="cl"><span class="nx">geekdocAnchor</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div>
+    </div>
+    <input
+      type="radio"
+      class="gdoc-tabs__control hidden"
+      name="tabs-page-config"
+      id="tabs-page-config-1"
+      
+    />
+    <label for="tabs-page-config-1" class="gdoc-tabs__label">
+      YAML
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="line"><span class="cl"><span class="c"># Set type to &#39;posts&#39; if you want to render page as blogpost.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;posts&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set page weight to re-arrange items in file-tree menu.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set how many table of contents levels to be showed on page.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocToC</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set a description for the current page. This will be shown in toc-trees objects.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocDescription</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Show a breadcrumb navigation bar at the top of each docs page.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocBreadcrumb</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set source repository location.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocRepo</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://github.com/thegeeklab/hugo-geekdoc&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Enable &#34;Edit this page&#34; links. Requires &#39;GeekdocRepo&#39; param and path must point</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># to &#39;content&#39; directory of repo.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocEditPath</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;edit/master/exampleSite/content&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Used for &#39;Edit this page&#39; link, set to &#39;.File.Path&#39; by default.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Can be overwritten by a path relative to &#39;geekdocEditPath&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocFilePath</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set to mark page as flat section (file-tree menu only).</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocFlatSection</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set true to hide page or section from side menu (file-tree menu only).</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocHidden</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set false to show this page as a file-tree menu entry when you want it to be hidden in the sidebar.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># NOTE: Only applies when &#39;geekdocHidden: true&#39;.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocHiddenTocTree</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Set to true to make a section foldable in side menu.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocCollapseSection</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Add an anchor link to headlines.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">geekdocAnchor</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div>
+    </div>
+</div>
+
+
   </article>
 
 

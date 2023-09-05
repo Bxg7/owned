@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on My Documentation Site</title>
+    <link>http://localhost/test/</link>
+    <description>Recent content in Test on My Documentation Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sure!!</title>
+      <link>http://localhost/test/htb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/test/htb/</guid>
+      <description>Well there you go!!!!</description>
+    </item>
+    
+  </channel>
+</rss>
