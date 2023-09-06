@@ -64,7 +64,7 @@ main:
 
 As an advantage you can add icons to your menu entries e.g. `icon: "notification"`.
 
-![Menuutje](bundle-menu.png)
+[![Example bundle menu](bundle-menu.png)
 
 ### More menu
 
