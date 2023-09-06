@@ -41,4 +41,4 @@ a:visited { color: #73bfb8 }
 
 And that is how the result will looks like. Happy customizing!
 
-![Test](color-schemes.png)
+![Test](colorscheme-example.png)
