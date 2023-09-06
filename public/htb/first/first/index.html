@@ -12,11 +12,9 @@
 <meta name="generator" content="Hugo 0.118.2">
 
 
-  <meta name="description" content="Character set Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &lsquo;a&rsquo; or &lsquo;1&rsquo;.
-Example:
-character &ldquo;1&rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32&#43;16&#43;1) The key thing to remember: the character &ldquo;1&rdquo; is NOT the same thing as the number 1." />
+  <meta name="description" content="Hack the box writeup" />
 
-    <title>ASCII | Cybersecurity Hacking Documentation</title>
+    <title>First writeup | Cybersecurity Hacking Documentation</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -37,54 +35,42 @@ character &ldquo;1&rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (cou
     
   <meta
     property="og:title"
-    content="ASCII"
+    content="First writeup"
   />
   <meta property="og:site_name" content="Cybersecurity Hacking Documentation" />
-  <meta property="og:description" content="Character set Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as ‘a’ or ‘1’.
-Example:
-character “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32&#43;16&#43;1) The key thing to remember: the character “1” is NOT the same thing as the number 1." />
+  <meta property="og:description" content="Hack the box writeup" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost/data/ascii/" />
+<meta property="og:url" content="http://localhost/htb/first/first/" />
 
-<meta property="article:section" content="Data" />
-    <meta
-      property="article:published_time"
-      content="2019-01-09T00:00:00+00:00"
-    />
-    <meta
-      property="article:modified_time"
-      content="2019-01-09T00:00:00+00:00"
-    />
+<meta property="article:section" content="Htb" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="ASCII" />
-  <meta name="twitter:description" content="Character set Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as ‘a’ or ‘1’.
-Example:
-character “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32&#43;16&#43;1) The key thing to remember: the character “1” is NOT the same thing as the number 1." />
+<meta name="twitter:title" content="First writeup" />
+  <meta name="twitter:description" content="Hack the box writeup" />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Data",
-      "name": "ASCII",
-      "url" : "http://localhost/data/ascii/",
-      "headline": "ASCII",
-      "description": "Character set Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as ‘a’ or ‘1’.\nExample:\ncharacter “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32\u002b16\u002b1) The key thing to remember: the character “1” is NOT the same thing as the number 1.",
-      "wordCount" : "158",
+      "articleSection": "Htb",
+      "name": "First writeup",
+      "url" : "http://localhost/htb/first/first/",
+      "headline": "First writeup",
+      "description": "Hack the box writeup",
+      "wordCount" : "4",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost/data/ascii/"
+          "@id": "http://localhost/htb/first/first/"
       },
       "copyrightHolder" : "Cybersecurity Hacking Documentation",
-      "copyrightYear" : "2019",
-      "dateCreated": "2019-01-09T00:00:00.00Z",
-      "datePublished": "2019-01-09T00:00:00.00Z",
-      "dateModified": "2019-01-09T00:00:00.00Z",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Cybersecurity Hacking Documentation",
@@ -162,7 +148,7 @@ character “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the w
   href="/custom.css"
   media="all"
 />
-  <link href="http://localhost/data/ascii/" rel="canonical" type="text/html" />
+  <link href="http://localhost/htb/first/first/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -367,8 +353,8 @@ character “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the w
               
                 <span class="flex">
                   <a
-                    href="/htb/first/"
-                    class="gdoc-nav__entry"
+                    href="/htb/first/first/"
+                    class="gdoc-nav__entry is-active"
                   >
                     First writeup
                   </a>
@@ -1562,7 +1548,7 @@ character “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the w
                 <span class="flex">
                   <a
                     href="/data/ascii/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     ASCII
                   </a>
@@ -2278,7 +2264,7 @@ character “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the w
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Documentation</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/data/' href='/data/'><span itemprop='name'>Data</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>ASCII</span><meta itemprop='position' content='3' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Documentation</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/htb/' href='/htb/'><span itemprop='name'>Htb</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>First writeup</span><meta itemprop='position' content='4' /></li>
   
 
   
@@ -2296,35 +2282,13 @@ character “1” hex 0x31 first nibble = 3 which is 0011 in binary (count the w
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>ASCII</h1>
-    <p><img
-  src="more-menu.png"
-  alt="Test"
-  
-/></p>
-<ul>
-<li>Character set</li>
-<li>Often used to represent english language characters.</li>
-<li>Originally it was 7-bit binary, which gave us 128 unique characters.</li>
-<li>The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character.</li>
-</ul>
-<p>Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &lsquo;a&rsquo; or &lsquo;1&rsquo;.</p>
+    <h1>First writeup</h1>
+    <p>Hack the box writeup</p>
 <p><img
-  src="/img/asci.png"
-  alt="asci1"
+  src="more-menu.png"
+  alt="Base64_5"
   
 /></p>
-<p>Example:</p>
-<ul>
-<li>character &ldquo;1&rdquo;</li>
-<li>hex 0x31</li>
-<li>first nibble = 3 which is 0011 in binary (count the weight of the columns: 84<b>21</b>)</li>
-<li>second nibble = 1 = which is 0001 in binary (count the weight of the columns: 842<b>1</b>)</li>
-<li>The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1)</li>
-</ul>
-<p>The key thing to remember: the character &ldquo;1&rdquo; is NOT the same thing as the number 1.</p>
-<p>So if you have a character &ldquo;1&rdquo; in a file, it is not stored as a single bit 1. <br>
-It is stored as the byte 0x31 that can be looked up in the table.</p>
 
   </article>
 
