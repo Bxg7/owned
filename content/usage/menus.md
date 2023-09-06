@@ -93,4 +93,4 @@ more:
     icon: "github"
 ```
 
-[![Example bundle menu](/media/more-menu.png)](/media/more-menu.png)
+![Example bundle menu](bundle-menu.png)
