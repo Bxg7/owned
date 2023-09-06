@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Htb on Cybersecurity Hacking Documentation</title>
+    <link>http://localhost/htb/</link>
+    <description>Recent content in Htb on Cybersecurity Hacking Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost/htb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First writeup</title>
+      <link>http://localhost/htb/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/htb/first/</guid>
+      <description>Hack the box writeup</description>
+    </item>
+    
+  </channel>
+</rss>

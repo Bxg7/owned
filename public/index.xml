@@ -27,6 +27,15 @@ Install requirements Using the theme Option 1: Download pre-build release bundle
     </item>
     
     <item>
+      <title>First writeup</title>
+      <link>http://localhost/htb/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/htb/first/</guid>
+      <description>Hack the box writeup</description>
+    </item>
+    
+    <item>
       <title>Getting Started</title>
       <link>http://localhost/docs/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -52,6 +61,170 @@ Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclima
       
       <guid>http://localhost/posts/hello_geekdoc/</guid>
       <description> Penetration Testing: A Hands-On Introduction to Hacking The Web Application Hackers Handbook Computer Security: A Hands-on Approach Black Hat Python Buffer Overflow Attacks - Detect Exploit Prevent Cross Site Scripting Attacks Xss Exploits and Defense Cybersecurity - Attack and Defense Strategies Fuzzing Brute Force Vulnerability Discovery Hacking Exposed Linux Hacking The Art of Exploitation Kali Linux an Ethical Hackers Cookbook Mastering Kali Linux for Advanced Penetration Testing Penetration Testing A Hands On Introduction to Hacking Python Penetration Testing Essentials RTFM red team field manual TCP IP Guide Oct 2005 The Basics of Hacking and Penetration Testing The Basics of Web Hacking - Tools and Techniques to Attack the Web Understanding Network Hacks_ Attack and Defense With Python Violent Python - A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers Wireshark for Security Professionals Wireshark - Practical packet analysis to Solve Real World Problems </description>
+    </item>
+    
+    <item>
+      <title>Base64</title>
+      <link>http://localhost/data/base64_encoding/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/data/base64_encoding/</guid>
+      <description>Base-64 encoding is a way encoding binary data into ASCII text so that it&amp;rsquo;s more easily transmitted in things like e-mail and HTML form data.
+Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits.
+If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, interpreted as 3 groups of 8 bits.</description>
+    </item>
+    
+    <item>
+      <title>ARP spoof detection</title>
+      <link>http://localhost/arp/arp_spoof_detector/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/arp/arp_spoof_detector/</guid>
+      <description>In order to detect if we are under attack we can use following code. It will check if the MAC address (.hwsrc field in ARP reply packet) that is associated with the spoofed IP address that the attacker is sending with the packet (.psrc field in ARP reply packet) differs from what we get back (=real mac address) when we run get_mac function.
+Some words on defense: https://security.stackexchange.com/questions/161173/how-exactly-do-you-protect-against-arp-spoofing-in-large-lans
+#!/usr/bin/env python import scapy.</description>
+    </item>
+    
+    <item>
+      <title>Binary</title>
+      <link>http://localhost/data/binary/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/data/binary/</guid>
+      <description>Binary is Base 2, unlike our Decimal counting system which is Base 10. In other words, Binary has only 2 different numerals (0 and 1) to denote a value, unlike Decimal which has 10 numerals (0,1,2,3,4,5,6,7,8 and 9). A value in binary is sometimes represented by prepending the prefix 0b to the value.
+Example: 0b01011101</description>
+    </item>
+    
+    <item>
+      <title>SSL stripping</title>
+      <link>http://localhost/http/ssl_stripping/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/http/ssl_stripping/</guid>
+      <description>https://moxie.org/software/sslstrip/
+Sslstrip requires that the connection between the client and the sslstrip instance is done over plain HTTP.
+The connection from sslstrip to the webserver can be either HTTP and HTTPS.
+This means that if the client first requests the site with plain HTTP then sslstrip works. If instead the clients starts already with HTTPS since it either knows that the site is only accessible by HTTPS or if the browser enforces HTTPS because of a HSTS policy (preloaded or from earlier visits) then sslstrip will not work.</description>
+    </item>
+    
+    <item>
+      <title>ASCII</title>
+      <link>http://localhost/data/ascii/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/data/ascii/</guid>
+      <description>Character set Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
+Example:
+character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
+    </item>
+    
+    <item>
+      <title>DNS request sniffing</title>
+      <link>http://localhost/dns/dns_request_sniffing/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/dns/dns_request_sniffing/</guid>
+      <description>After we become the mitm we can sniff the DNS Question Record&amp;rsquo;s QNAME field.
+I am using netfilterqueue here, but it could be done without it as well because we are not modifying any packets on the fly, we are only inspecting.
+To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
+iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local machine:</description>
+    </item>
+    
+    <item>
+      <title>DNS spoofing</title>
+      <link>http://localhost/dns/dns_spoofing/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/dns/dns_spoofing/</guid>
+      <description>After we become the mitm we can spoof DNS answers, by modifying the rdata field in the DNS Response request packet.
+After spoofing the rdata field will contain a spoofed ip address of a attacker server instead of the original servers IP address.
+For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.
+To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:</description>
+    </item>
+    
+    <item>
+      <title>DNS spoofing</title>
+      <link>http://localhost/spoofing/dns_spoofing/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/spoofing/dns_spoofing/</guid>
+      <description>After we become the mitm we can spoof DNS answers, by modifying the rdata field in the DNS Response request packet.
+After spoofing the rdata field will contain a spoofed ip address of a attacker server instead of the original servers IP address.
+For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.
+To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:</description>
+    </item>
+    
+    <item>
+      <title>Hex</title>
+      <link>http://localhost/data/hex/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/data/hex/</guid>
+      <description>Hexadecimal is a base 16 system used to simplify how binary is represented.
+A hex digit can be any of the following 16 digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F.
+Every HEX digit is represented by a sequence of 4 bits (also sometimes called a &amp;ldquo;nibble&amp;rdquo;).
+4 bits is exactly half of a byte, which is 8 bits.
+A value in HEX is often represented by prepending the prefix 0x to the value.</description>
+    </item>
+    
+    <item>
+      <title>HTTP code injection &amp; BeEF</title>
+      <link>http://localhost/http/http_code_injection/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/http/http_code_injection/</guid>
+      <description>After we become the [mitm][arp_cache_poisoning] we can modify HTTP responses by changing the Raw data on the fly.
+[arp_cache_poisoning]: https://jwever.bitbucket.io/lan/exploitation/mitm/arp_cache_poisoning/
+Since most clients will request [content encoding][http_compression] (by adding a &amp;ldquo;Accept-Encoding&amp;rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.
+This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!
+[http_compression]: https://en.wikipedia.org/wiki/HTTP_compression</description>
+    </item>
+    
+    <item>
+      <title>HTTP credentials sniffing</title>
+      <link>http://localhost/http/credentials_sniffer/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/http/credentials_sniffer/</guid>
+      <description>After we become the mitm we can sniff all HTTP requests. This time using scapy&amp;rsquo;s buildin sniffing function.
+In the code we are checking for HTTP credentials.
+To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
+Full code:
+import scapy.all as scapy from scapy.layers import http def sniff(interface): scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet) def get_url(packet): return packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path def get_login_info(packet): if packet.</description>
+    </item>
+    
+    <item>
+      <title>Modifying HTTP download response</title>
+      <link>http://localhost/http/replace_download/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/http/replace_download/</guid>
+      <description>After we become the mitm we can modify HTTP responses by changing the Raw data.
+In this case we check if the victim is downloading a .exe file and we are changing the response from the server so that it includes are own malicious payload.
+We do check against the destination port (dport) and source port (sport). When a sport is present it is a response, when a dport is present it is a request.</description>
+    </item>
+    
+    <item>
+      <title>Arp cache poisoning</title>
+      <link>http://localhost/arp/arp_cache_poisoning/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/arp/arp_cache_poisoning/</guid>
+      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.
+We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data&amp;hellip;
+To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:</description>
+    </item>
+    
+    <item>
+      <title>Network scanning using arp</title>
+      <link>http://localhost/arp/arp_scanning/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/arp/arp_scanning/</guid>
+      <description>We can scan the LAN by sending an ARP request to the broadcast mac address iterating over every IP we specify.
+When a device sends a packet to the broadcast MAC address (FF:FF:FF:FF:FF:FF), it is delivered to all stations on the local network.
+Arp request says: &amp;ldquo;who has 192.168.0.10?&amp;rdquo;
+If a host with ip 192.168.0.10 is online it will reply with an ARP reply message saying: &amp;ldquo;I have 192.168.0.10, my mac address is 00:22:33:44:55:66&amp;rdquo;</description>
     </item>
     
     <item>

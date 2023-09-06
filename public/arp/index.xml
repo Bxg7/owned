@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arp on Cybersecurity Hacking Documentation</title>
+    <link>http://localhost/arp/</link>
+    <description>Recent content in Arp on Cybersecurity Hacking Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/arp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARP spoof detection</title>
+      <link>http://localhost/arp/arp_spoof_detector/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/arp/arp_spoof_detector/</guid>
+      <description>In order to detect if we are under attack we can use following code. It will check if the MAC address (.hwsrc field in ARP reply packet) that is associated with the spoofed IP address that the attacker is sending with the packet (.psrc field in ARP reply packet) differs from what we get back (=real mac address) when we run get_mac function.
+Some words on defense: https://security.stackexchange.com/questions/161173/how-exactly-do-you-protect-against-arp-spoofing-in-large-lans
+#!/usr/bin/env python import scapy.</description>
+    </item>
+    
+    <item>
+      <title>Arp cache poisoning</title>
+      <link>http://localhost/arp/arp_cache_poisoning/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/arp/arp_cache_poisoning/</guid>
+      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.
+We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data&amp;hellip;
+To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:</description>
+    </item>
+    
+    <item>
+      <title>Network scanning using arp</title>
+      <link>http://localhost/arp/arp_scanning/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/arp/arp_scanning/</guid>
+      <description>We can scan the LAN by sending an ARP request to the broadcast mac address iterating over every IP we specify.
+When a device sends a packet to the broadcast MAC address (FF:FF:FF:FF:FF:FF), it is delivered to all stations on the local network.
+Arp request says: &amp;ldquo;who has 192.168.0.10?&amp;rdquo;
+If a host with ip 192.168.0.10 is online it will reply with an ARP reply message saying: &amp;ldquo;I have 192.168.0.10, my mac address is 00:22:33:44:55:66&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>
