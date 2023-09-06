@@ -4,20 +4,22 @@
   <url>
     <loc>http://localhost/usage/getting-started/</loc>
   </url><url>
-    <loc>http://localhost/htb/</loc>
-  </url><url>
-    <loc>http://localhost/usage/</loc>
-  </url><url>
     <loc>http://localhost/usage/configuration/</loc>
-  </url><url>
-    <loc>http://localhost/shortcodes/</loc>
   </url><url>
     <loc>http://localhost/htb/first/</loc>
   </url><url>
-    <loc>http://localhost/docs/getting-started/</loc>
+    <loc>http://localhost/htb/</loc>
   </url><url>
     <loc>http://localhost/posts/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost/usage/</loc>
+  </url><url>
+    <loc>http://localhost/shortcodes/</loc>
+  </url><url>
+    <loc>http://localhost/collapse/</loc>
+  </url><url>
+    <loc>http://localhost/docs/getting-started/</loc>
   </url><url>
     <loc>http://localhost/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
@@ -116,8 +118,6 @@
     <loc>http://localhost/usage/color-schemes/</loc>
   </url><url>
     <loc>http://localhost/usage/menus/</loc>
-  </url><url>
-    <loc>http://localhost/collapse/</loc>
   </url><url>
     <loc>http://localhost/docs/</loc>
   </url><url>
