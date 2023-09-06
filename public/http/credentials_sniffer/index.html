@@ -18,7 +18,7 @@ To get this code to work you first need to run arp cache poisoning and run this 
 Full code:
 import scapy.all as scapy from scapy.layers import http def sniff(interface): scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet) def get_url(packet): return packet[http.HTTPRequest].Host &#43; packet[http.HTTPRequest].Path def get_login_info(packet): if packet." />
 
-    <title>HTTP credentials sniffing | Cybersecurity Hacking Documentation</title>
+    <title>HTTP credentials sniffing | Jelle&#39;s pentesting docs</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -41,7 +41,7 @@ import scapy.all as scapy from scapy.layers import http def sniff(interface): sc
     property="og:title"
     content="HTTP credentials sniffing"
   />
-  <meta property="og:site_name" content="Cybersecurity Hacking Documentation" />
+  <meta property="og:site_name" content="Jelle's pentesting docs" />
   <meta property="og:description" content="After we become the mitm we can sniff all HTTP requests. This time using scapy’s buildin sniffing function.
 In the code we are checking for HTTP credentials.
 To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
@@ -86,14 +86,14 @@ import scapy.all as scapy from scapy.layers import http def sniff(interface): sc
           "@type": "WebPage",
           "@id": "http://localhost/http/credentials_sniffer/"
       },
-      "copyrightHolder" : "Cybersecurity Hacking Documentation",
+      "copyrightHolder" : "Jelle\u0027s pentesting docs",
       "copyrightYear" : "2019",
       "dateCreated": "2019-01-09T00:00:00.00Z",
       "datePublished": "2019-01-09T00:00:00.00Z",
       "dateModified": "2019-01-09T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
-          "name": "Cybersecurity Hacking Documentation",
+          "name": "Jelle's pentesting docs",
           "url": "http://localhost",
           "logo": {
               "@type": "ImageObject",
@@ -212,7 +212,7 @@ import scapy.all as scapy from scapy.layers import http def sniff(interface): sc
             src="/brand.svg"
             alt=""
           />
-          <span class="gdoc-brand__title">Cybersecurity Hacking Documentation</span>
+          <span class="gdoc-brand__title">Jelle&#39;s pentesting docs</span>
         </span>
       </a>
     </div>
