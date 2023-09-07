@@ -2786,7 +2786,7 @@ iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local ma
     <h1>DNS request sniffing</h1>
     <p>After we become the <a
   class="gdoc-markdown__link"
-  href="https://jwever.bitbucket.io/lan/exploitation/mitm/arp_cache_poisoning/"
+  href="https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/"
 >mitm</a> we can sniff the DNS Question Record&rsquo;s QNAME field.<br>
 I am using netfilterqueue here, but it could be done without it as well because we are not modifying any packets on the fly, we are only inspecting.<br>
 To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:</p>

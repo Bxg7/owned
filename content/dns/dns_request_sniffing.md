@@ -10,7 +10,7 @@ After we become the [mitm][arp_cache_poisoning] we can sniff the DNS Question Re
 I am using netfilterqueue here, but it could be done without it as well because we are not modifying any packets on the fly, we are only inspecting.  
 To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:  
 
-[arp_cache_poisoning]: https://jwever.bitbucket.io/lan/exploitation/mitm/arp_cache_poisoning/
+[arp_cache_poisoning]: https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/
 
 ```sh
 iptables -I FORWARD -j NFQUEUE --queue-num 0

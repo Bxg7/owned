@@ -2786,7 +2786,7 @@ To get this code to work you first need to run arp cache poisoning and run this 
     <h1>DNS spoofing</h1>
     <p>After we become the <a
   class="gdoc-markdown__link"
-  href="https://jwever.bitbucket.io/lan/exploitation/mitm/arp_cache_poisoning/"
+  href="https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/"
 >mitm</a> we can spoof DNS answers, by modifying the rdata field in the DNS Response request packet.</p>
 <p>After spoofing the rdata field will contain a spoofed ip address of a attacker server instead of the original servers IP address.</p>
 <p>For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.<br>
