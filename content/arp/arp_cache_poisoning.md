@@ -11,7 +11,7 @@ We do the same for the router, we tell it we are the victim machine. After we be
 
 To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:
 
-```mk
+```Shell
 echo '1' > /proc/sys/net/ipv4/ip_forward
 ```
 
@@ -20,11 +20,11 @@ we will get the correct mac address back from the target_ip.
 
 Now that we have the correct mac address from the target we can start sending spoofed reply packets with spoof function ('target_ip' <b>is at</b> 'attacker mac address')   
 
-![arp reply 1](/img/1at.png)
+![arp reply 1](1at.png)
 
 and
 
-![arp reply 2](/img/18at.png)
+![arp reply 2](18at.png)
 
 The full code:  
 

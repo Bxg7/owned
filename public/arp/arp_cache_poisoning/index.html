@@ -2784,18 +2784,18 @@ To allow forwarding of packets between the victim and the gateway we need to ena
     <p>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.<br>
 We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp; inspect all data&hellip;</p>
 <p>To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mk" data-lang="mk"><span class="line"><span class="cl"><span class="err">echo</span> <span class="s1">&#39;1&#39;</span> <span class="err">&gt;</span> <span class="err">/proc/sys/net/ipv4/ip_forward</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;1&#39;</span> &gt; /proc/sys/net/ipv4/ip_forward
 </span></span></code></pre></div><p>The function get_mac sends arp request message (&ldquo;Who has&rdquo;) to the broadcast address, so all clients on the LAN receive it,<br>
 we will get the correct mac address back from the target_ip.</p>
 <p>Now that we have the correct mac address from the target we can start sending spoofed reply packets with spoof function (&rsquo;target_ip&rsquo; <b>is at</b> &lsquo;attacker mac address&rsquo;)</p>
 <p><img
-  src="/img/1at.png"
+  src="1at.png"
   alt="arp reply 1"
   
 /></p>
 <p>and</p>
 <p><img
-  src="/img/18at.png"
+  src="18at.png"
   alt="arp reply 2"
   
 /></p>
