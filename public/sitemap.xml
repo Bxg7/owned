@@ -30,6 +30,18 @@
     <loc>http://localhost/posts/hello_geekdoc/</loc>
     <lastmod>2020-01-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost/malware/</loc>
+    <lastmod>2019-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost/malware/backdoor/</loc>
+    <lastmod>2019-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost/malware/cross_platform_malware_example/</loc>
+    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost/malware/keylogger/</loc>
+    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost/ciphers/</loc>
     <lastmod>2019-02-03T00:00:00+00:00</lastmod>
   </url><url>
