@@ -25,12 +25,12 @@ Hex codes are used in many areas of computing to simplify binary codes. It is im
 * error messages
 
 
-![Hex1](/img/hex.png)
+![Hex1](hex.png)
 
 Converting between binary and hexadecimal:
 
-![Hex3](/img/hex3.png)
+![Hex3](hex3.png)
 
 Converting between decimal and hexadecimal:
 
-![Hex4](/img/hex4.png)
+![Hex4](hex4.png)

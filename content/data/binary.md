@@ -10,4 +10,4 @@ Binary is Base 2, unlike our Decimal counting system which is Base 10. In other 
 
 Example: 0b01011101  
 
-![binary](/img/binary.png)
+![binary](binary.png)

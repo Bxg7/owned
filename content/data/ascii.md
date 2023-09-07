@@ -6,9 +6,6 @@ date: 2019-01-09
 # geekdocHidden: false
 ---
 
-![Test](more-menu.png)
-
-
 * Character set 
 * Often used to represent english language characters.  
 * Originally it was 7-bit binary, which gave us 128 unique characters.
@@ -16,7 +13,7 @@ date: 2019-01-09
 
 Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as 'a' or '1'.
 
-![asci1](/img/asci.png)
+![asci1](asci.png)
 
 Example:
 

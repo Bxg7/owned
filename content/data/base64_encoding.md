@@ -8,16 +8,16 @@ date: 2019-01-16
 Base-64 encoding is a way encoding binary data into ASCII text so that it's more easily transmitted in things like e-mail and HTML form data.  
 Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits.  
 
-![Base64_5](/img/base64_5.png)
+![Base64_5](base64_5.png)
 
 If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, interpreted as 3 groups of 8 bits.  
 If you then break them up into 4 groups of 6 bits you now have 4 numbers within 0 and 63.  
 
-![Base64_4](/img/base64_4.png)
+![Base64_4](base64_4.png)
 
 Then use the lookup table below.  
 
-![Base64_1](/img/base64_1.png)
+![Base64_1](base64_1.png)
 
 If you have something other then 3 bytes, for example say you have 4 bytes of data for the input, then base64 end with two equal signs (==) to indicate it had to add two characters of padding. If you have 5 bytes you have 1 equal sign. If you have 6 bytes there are no equal signs, indicating the input fits neatly into base64 with no need for padding.  
 
