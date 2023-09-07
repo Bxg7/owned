@@ -7,7 +7,7 @@ date: 2019-01-09
 ---
 
 After we become the [mitm][arp_cache_poisoning] we can modify HTTP responses by changing the Raw data on the fly.  
-[arp_cache_poisoning]: https://jwever.bitbucket.io/lan/exploitation/mitm/arp_cache_poisoning/
+[arp_cache_poisoning]: https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/
 
 Since most clients will request [content encoding][http_compression] (by adding a "Accept-Encoding" header), the HTTP response data (scapy.Raw layer) will look like gibberish.  
 This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!  
@@ -21,7 +21,7 @@ In the below example code we then use BeEF on our attacker machine. BeEF is shor
 On Parrot OS i first opened BeEF Framework and then logged in with the default credentials for BeEF: beef/beef at:
 http://localhost:3000/ui/authentication
 
-![beef](/img/beef.jpg)
+![beef](beef.jpg)
 
 In the below example we are modifying HTTP responses and injecting the BeEF Hook javascript code into it. Evil stuff :-P  
 
