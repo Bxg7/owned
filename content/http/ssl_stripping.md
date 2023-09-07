@@ -33,4 +33,4 @@ This is for the same reason as if-modified-since, so the client doesn't try to l
 
 changes link in Location header to HTTP
 
-![sslstrip](/img/sslstrip.png)
+![sslstrip](sslstrip.png)
