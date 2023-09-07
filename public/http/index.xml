@@ -25,11 +25,11 @@ This means that if the client first requests the site with plain HTTP then sslst
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/http/http_code_injection/</guid>
-      <description>After we become the [mitm][arp_cache_poisoning] we can modify HTTP responses by changing the Raw data on the fly.
-[arp_cache_poisoning]: https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/
+      <description>After we become the mitm we can modify HTTP responses by changing the Raw data on the fly.
 Since most clients will request [content encoding][http_compression] (by adding a &amp;ldquo;Accept-Encoding&amp;rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.
 This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!
-[http_compression]: https://en.wikipedia.org/wiki/HTTP_compression</description>
+[http_compression]: https://en.wikipedia.org/wiki/HTTP_compression
+We also need to make sure we change the size of the &amp;ldquo;Content-Length&amp;rdquo; value to match with our injected code.</description>
     </item>
     
     <item>
