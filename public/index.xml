@@ -272,7 +272,7 @@ A value in HEX is often represented by prepending the prefix 0x to the value.</d
       <description>After we become the mitm we can modify HTTP responses by changing the Raw data on the fly.
 Since most clients will request [content encoding][http_compression] (by adding a &amp;ldquo;Accept-Encoding&amp;rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.
 This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!
-[http_compression]: https://en.wikipedia.org/wiki/HTTP_compression
+https://en.wikipedia.org/wiki/HTTP_compression
 We also need to make sure we change the size of the &amp;ldquo;Content-Length&amp;rdquo; value to match with our injected code.</description>
     </item>
     

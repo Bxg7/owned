@@ -12,7 +12,7 @@ After we become the [mitm][arp_cache_poisoning] we can modify HTTP responses by 
 
 Since most clients will request [content encoding][http_compression] (by adding a "Accept-Encoding" header), the HTTP response data (scapy.Raw layer) will look like gibberish.  
 This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!  
-[http_compression]: https://en.wikipedia.org/wiki/HTTP_compression
+https://en.wikipedia.org/wiki/HTTP_compression
 
 We also need to make sure we change the size of the "Content-Length" value to match with our injected code.   
 Otherwise the client browser will not accept the server response.  
