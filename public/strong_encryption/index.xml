@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strong_encryption on Jelle&#39;s pentesting docs</title>
+    <link>http://localhost/strong_encryption/</link>
+    <description>Recent content in Strong_encryption on Jelle&#39;s pentesting docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/strong_encryption/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AES &amp; Padding Oracle Attack</title>
+      <link>http://localhost/strong_encryption/aes/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/strong_encryption/aes/</guid>
+      <description>Under construction&amp;hellip;
+https://crypto.stackexchange.com/questions/3714/how-does-a-padding-oracle-attack-work https://resources.infosecinstitute.com/padding-oracle-attack-2/#gref https://tlseminar.github.io/padding-oracle/
+https://thebestvpn.com/advanced-encryption-standard-aes/
+https://www.youtube.com/watch?v=1sdOaXTUGa4 https://robertheaton.com/2013/07/29/padding-oracle-attack/ https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth https://erlend.oftedal.no/blog/poet/
+x=1 ^ y=1 = 0 x=1 ^ y=0 = 1 x=0 ^ y=0 = 0 x=0 ^ y=1 = 1
+An intuitive way of understanding why XOR is associative is as follows:
+First recognize that XOR is commutative, that is, a⊕b=b⊕a. This can be done using a truth table.
+Then, think of the XOR operator as a &amp;lsquo;conditional flip&amp;rsquo; operator, that is think of a⊕b as saying if a is 1, take flipped b as the output, while if a is 0, take b as the output.</description>
+    </item>
+    
+  </channel>
+</rss>

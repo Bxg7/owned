@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Jelle&#39;s pentesting docs</title>
+    <link>http://localhost/networking/</link>
+    <description>Recent content in Networking on Jelle&#39;s pentesting docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L2 vs L3 switch</title>
+      <link>http://localhost/networking/switches/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/networking/switches/</guid>
+      <description>When you ping across (so when you go from one interface to another/from one subnet to another) a router or a layer 3 switch, the layer 2 information is updated at each HOP (meaning the layer 2 headers are updated). The layer 3 information remains the same unless NAT is used.
+When you move from one VLAN to another VLAN on a layer3 switch, or move from one interface to another interface on a router the layer3 information is not changed but the layer 2 headers are rewritten.</description>
+    </item>
+    
+  </channel>
+</rss>

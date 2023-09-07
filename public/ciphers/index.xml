@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ciphers on Jelle&#39;s pentesting docs</title>
+    <link>http://localhost/ciphers/</link>
+    <description>Recent content in Ciphers on Jelle&#39;s pentesting docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/ciphers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Time Pad</title>
+      <link>http://localhost/ciphers/otp/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/ciphers/otp/</guid>
+      <description>One-time pad (OTP), also called Vernam-cipher or the perfect cipher, is a crypto algorithm where plaintext is combined with a random key.
+It is the only existing mathematically unbreakable encryption.
+Used by Special Operations teams and resistance groups during WW2, popular with intelligence agencies and their spies during the Cold War and beyond, protecting diplomatic and military message traffic around the world for many decades, the one-time pad gained a reputation as a simple yet solid encryption system with an absolute security which is unmatched by today&amp;rsquo;s modern crypto algorithms.</description>
+    </item>
+    
+    <item>
+      <title>XOR Cipher</title>
+      <link>http://localhost/ciphers/xor/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/ciphers/xor/</guid>
+      <description>In cryptography, the simple XOR cipher is a type of additive cipher.
+XOR is short for exclusive or. It is a bitwise operator.
+If one of the two operands, but not both are true, the statement is true.
+XOR truth table:
+In the following example we ask for input text and key then calculate the length of the input string and store it in n.
+Then we iterate over each byte (each ASCII character) and perform a XOR operation (k XOR b in below example) on each bit within the byte.</description>
+    </item>
+    
+    <item>
+      <title>Caesar Cipher &amp; ROT13</title>
+      <link>http://localhost/ciphers/caesar_cipher/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/ciphers/caesar_cipher/</guid>
+      <description>Caesar Cipher The Caesar cipher is one of the earliest known and simplest ciphers.
+It is a type of substitution cipher in which each letter in the plaintext is &amp;lsquo;shifted&amp;rsquo; 3 numbers of places down the alphabet.
+In python we first define an alphabet string. When the ask for user input. We store the length of the user input into the n variable. We then iterate over each character in the string and find its location within the alphabet string and store it in the loc variable.</description>
+    </item>
+    
+  </channel>
+</rss>

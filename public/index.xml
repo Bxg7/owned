@@ -64,6 +64,81 @@ Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclima
     </item>
     
     <item>
+      <title>One Time Pad</title>
+      <link>http://localhost/ciphers/otp/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/ciphers/otp/</guid>
+      <description>One-time pad (OTP), also called Vernam-cipher or the perfect cipher, is a crypto algorithm where plaintext is combined with a random key.
+It is the only existing mathematically unbreakable encryption.
+Used by Special Operations teams and resistance groups during WW2, popular with intelligence agencies and their spies during the Cold War and beyond, protecting diplomatic and military message traffic around the world for many decades, the one-time pad gained a reputation as a simple yet solid encryption system with an absolute security which is unmatched by today&amp;rsquo;s modern crypto algorithms.</description>
+    </item>
+    
+    <item>
+      <title>AES &amp; Padding Oracle Attack</title>
+      <link>http://localhost/strong_encryption/aes/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/strong_encryption/aes/</guid>
+      <description>Under construction&amp;hellip;
+https://crypto.stackexchange.com/questions/3714/how-does-a-padding-oracle-attack-work https://resources.infosecinstitute.com/padding-oracle-attack-2/#gref https://tlseminar.github.io/padding-oracle/
+https://thebestvpn.com/advanced-encryption-standard-aes/
+https://www.youtube.com/watch?v=1sdOaXTUGa4 https://robertheaton.com/2013/07/29/padding-oracle-attack/ https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth https://erlend.oftedal.no/blog/poet/
+x=1 ^ y=1 = 0 x=1 ^ y=0 = 1 x=0 ^ y=0 = 0 x=0 ^ y=1 = 1
+An intuitive way of understanding why XOR is associative is as follows:
+First recognize that XOR is commutative, that is, a⊕b=b⊕a. This can be done using a truth table.
+Then, think of the XOR operator as a &amp;lsquo;conditional flip&amp;rsquo; operator, that is think of a⊕b as saying if a is 1, take flipped b as the output, while if a is 0, take b as the output.</description>
+    </item>
+    
+    <item>
+      <title>Linux Password Hash Cracking</title>
+      <link>http://localhost/hashing/linux_password_hashes/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/hashing/linux_password_hashes/</guid>
+      <description>Create 3 users in Linux and set their passwords:
+sudo useradd -r -s /bin/false john sudo useradd -r -s /bin/false mary sudo useradd -r -s /bin/false dennis sudo passwd john (using P@ssw0rd as password) sudo passwd mary (using P@ssw0rd as password) sudo passwd dennis (using P@ssw0rd999 as password) The /etc/shadow contents:
+sudo cat /etc/shadow | grep -E &amp;#39;john|mary|dennis&amp;#39; john:$6$WvpWG7ls$IDqt8f/xBMC8h7IB57pWrQ3o06MATJjby7wkF2hqKN2y4k7HgPg7yCknlM.lSaftV4UI0ZauJnL.RWVOGD.jb.:17927:::::: mary:$6$pwiGPdMP$CvjOQZPsnAaWVRwWcOjimPWdNzucgCIh6DAVWF5io0zn0hzjWJPkVDpUX6OryYaOahRu4t5TxMXgXEqPkIfRK1:17927:::::: dennis:$6$nJO6qY4r$YfG8AWh22sncAusvM..92uzphXtnbEej1rpyP0yrYSQlI7XATA9PEknEb52PVHxXH5C/Oxo46ssMEwZG6PGJp1:17927:::::: After each username comes $6 which indicates this is a password type 6, meaning its hashed using SHA-512, which is the most modern and secure form of password hashing.</description>
+    </item>
+    
+    <item>
+      <title>Windows Password Hash Cracking</title>
+      <link>http://localhost/hashing/windows_password_hashes/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/hashing/windows_password_hashes/</guid>
+      <description>Create 3 users on Windows 2016 Server (i used evaluation version in VirtualBox)
+Disable Realtime Virus Protection:
+Create directory c:\mimikatz and open command prompt in this directory, then run this command to export the SAM database into the c:\mimikatz directory:
+reg save HKLM\SAM sam.hiv Download mimikatz from https://github.com/gentilkiwi/mimikatz/releases, extract to c:\mimikatz and run it from a command prompt:
+c:\mimikatz&amp;gt;mimikatz.exe In the mimikatz prompt run these commands:
+log privilege::debug token::elevate lsadump::sam sam.</description>
+    </item>
+    
+    <item>
+      <title>MD5 &amp; SHA Hashes</title>
+      <link>http://localhost/hashing/md5/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/hashing/md5/</guid>
+      <description>What is a hash? A hash is a way to make a &amp;lsquo;fingerprint&amp;rsquo; of a file You take all the bytes of a file and combine them together using a hashing algorithm This creates a fixed length hash value Changing any part of the file will result in a completely different hash value when recalculating So when you have two files that are supposed to be identical, you can verify this by comparing the hashes.</description>
+    </item>
+    
+    <item>
+      <title>XOR Cipher</title>
+      <link>http://localhost/ciphers/xor/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/ciphers/xor/</guid>
+      <description>In cryptography, the simple XOR cipher is a type of additive cipher.
+XOR is short for exclusive or. It is a bitwise operator.
+If one of the two operands, but not both are true, the statement is true.
+XOR truth table:
+In the following example we ask for input text and key then calculate the length of the input string and store it in n.
+Then we iterate over each byte (each ASCII character) and perform a XOR operation (k XOR b in below example) on each bit within the byte.</description>
+    </item>
+    
+    <item>
       <title>Base64</title>
       <link>http://localhost/data/base64_encoding/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
@@ -72,6 +147,27 @@ Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclima
       <description>Base-64 encoding is a way encoding binary data into ASCII text so that it&amp;rsquo;s more easily transmitted in things like e-mail and HTML form data.
 Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits.
 If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, interpreted as 3 groups of 8 bits.</description>
+    </item>
+    
+    <item>
+      <title>Caesar Cipher &amp; ROT13</title>
+      <link>http://localhost/ciphers/caesar_cipher/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/ciphers/caesar_cipher/</guid>
+      <description>Caesar Cipher The Caesar cipher is one of the earliest known and simplest ciphers.
+It is a type of substitution cipher in which each letter in the plaintext is &amp;lsquo;shifted&amp;rsquo; 3 numbers of places down the alphabet.
+In python we first define an alphabet string. When the ask for user input. We store the length of the user input into the n variable. We then iterate over each character in the string and find its location within the alphabet string and store it in the loc variable.</description>
+    </item>
+    
+    <item>
+      <title>L2 vs L3 switch</title>
+      <link>http://localhost/networking/switches/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/networking/switches/</guid>
+      <description>When you ping across (so when you go from one interface to another/from one subnet to another) a router or a layer 3 switch, the layer 2 information is updated at each HOP (meaning the layer 2 headers are updated). The layer 3 information remains the same unless NAT is used.
+When you move from one VLAN to another VLAN on a layer3 switch, or move from one interface to another interface on a router the layer3 information is not changed but the layer 2 headers are rewritten.</description>
     </item>
     
     <item>
