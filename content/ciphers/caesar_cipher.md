@@ -12,7 +12,7 @@ It is a type of substitution cipher in which each letter in the plaintext is 'sh
 ![caesar](caesar1.png)
 
 In python we first define an alphabet string. When the ask for user input. We store the length of the user input into the n variable. We then iterate over each character in the string and find its location within the alphabet string and store it in the loc variable. Then we make the shift happen by
-```mk
+```Shell
 newloc = (loc + shift) % 26
 ```
 We then look up the shifted value in the alphabet and add it to str_out

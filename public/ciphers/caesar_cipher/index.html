@@ -2798,7 +2798,7 @@ It is a type of substitution cipher in which each letter in the plaintext is &ls
   
 /></p>
 <p>In python we first define an alphabet string. When the ask for user input. We store the length of the user input into the n variable. We then iterate over each character in the string and find its location within the alphabet string and store it in the loc variable. Then we make the shift happen by</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mk" data-lang="mk"><span class="line"><span class="cl"><span class="nv">newloc</span> <span class="o">=</span> <span class="o">(</span>loc + <span class="nb">shift</span><span class="o">)</span> % <span class="m">26</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl"><span class="nv">newloc</span> <span class="o">=</span> <span class="o">(</span>loc + <span class="nb">shift</span><span class="o">)</span> % <span class="m">26</span>
 </span></span></code></pre></div><p>We then look up the shifted value in the alphabet and add it to str_out</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env python</span>
 </span></span><span class="line"><span class="cl"><span class="n">alphabet</span> <span class="o">=</span> <span class="s2">&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#34;</span>
