@@ -15,13 +15,13 @@ To get this code to work you first need to run arp cache poisoning and run this 
 
 [arp_cache_poisoning]: https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/
 
-```mk
+```Shell
 echo '1' > /proc/sys/net/ipv4/ip_forward
 iptables -I FORWARD -j NFQUEUE --queue-num 0
 ```
 
 Or without arp spoofing on local machine:  
-```mk
+```Shell
 iptables -I OUTPUT -j NFQUEUE --queue-num 0
 iptables -I INPUT -j NFQUEUE --queue-num 0
 ```
