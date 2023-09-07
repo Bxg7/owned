@@ -2792,13 +2792,13 @@ log privilege::debug token::elevate lsadump::sam sam." />
     <h1>Windows Password Hash Cracking</h1>
     <p>Create 3 users on Windows 2016 Server (i used evaluation version in VirtualBox)</p>
 <p><img
-  src="/img/hash1.png"
+  src="hash1.png"
   alt="hash1"
   
 /></p>
 <p>Disable Realtime Virus Protection:</p>
 <p><img
-  src="/img/rtp.png"
+  src="rtp.png"
   alt="rtp"
   
 /></p>
@@ -2810,10 +2810,10 @@ log privilege::debug token::elevate lsadump::sam sam." />
 >https://github.com/gentilkiwi/mimikatz/releases</a>, extract to c:\mimikatz and run it from a command prompt:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">c:<span class="se">\m</span>imikatz&gt;mimikatz.exe
 </span></span></code></pre></div><p>In the mimikatz prompt run these commands:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mk" data-lang="mk"><span class="line"><span class="cl"><span class="err">log</span>
-</span></span><span class="line"><span class="cl"><span class="nf">privilege</span><span class="o">::</span><span class="n">debug</span>
-</span></span><span class="line"><span class="cl"><span class="nf">token</span><span class="o">::</span><span class="n">elevate</span>
-</span></span><span class="line"><span class="cl"><span class="nf">lsadump</span><span class="o">::</span><span class="n">sam</span> <span class="n">sam</span>.<span class="n">hiv</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">log
+</span></span><span class="line"><span class="cl">privilege::debug
+</span></span><span class="line"><span class="cl">token::elevate
+</span></span><span class="line"><span class="cl">lsadump::sam sam.hiv
 </span></span></code></pre></div><p>Output:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">RID  : 000003e8 <span class="o">(</span>1000<span class="o">)</span>
 </span></span><span class="line"><span class="cl">User : john
@@ -2837,7 +2837,7 @@ log privilege::debug token::elevate lsadump::sam sam." />
 </ul>
 <p>Grumpy cat does not approve:</p>
 <p><img
-  src="/img/grumpy.jpg"
+  src="grumpy.jpg"
   alt="grumpy"
   
 /></p>
@@ -2852,7 +2852,7 @@ log privilege::debug token::elevate lsadump::sam sam." />
 </div>
 <p>Since the password hashes have no variation (no salt used!) and any two users with the same password have the same hash you can use Google search engine to search for the hash that someone else might have already cracked:</p>
 <p><img
-  src="/img/hash2.png"
+  src="hash2.png"
   alt="hash2"
   
 /></p>

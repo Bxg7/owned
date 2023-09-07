@@ -6,7 +6,7 @@ date: 2019-01-31
 
 Create 3 users in Linux and set their passwords:  
 
-```mk
+```Shell
 sudo useradd -r -s /bin/false john
 sudo useradd -r -s /bin/false mary
 sudo useradd -r -s /bin/false dennis
@@ -17,7 +17,7 @@ sudo passwd dennis (using P@ssw0rd999 as password)
 
 The /etc/shadow contents:
 
-```mk
+```Shell
 sudo cat /etc/shadow | grep -E 'john|mary|dennis'
 john:$6$WvpWG7ls$IDqt8f/xBMC8h7IB57pWrQ3o06MATJjby7wkF2hqKN2y4k7HgPg7yCknlM.lSaftV4UI0ZauJnL.RWVOGD.jb.:17927::::::
 mary:$6$pwiGPdMP$CvjOQZPsnAaWVRwWcOjimPWdNzucgCIh6DAVWF5io0zn0hzjWJPkVDpUX6OryYaOahRu4t5TxMXgXEqPkIfRK1:17927::::::
@@ -92,6 +92,6 @@ for ip in range(1000,2000):
 
 Output:
 
-```mak
+```sh
 The password for hash PcSLfisbduUgOzRBUGOyr4OghBm8JRfNTDnbo5sMbrFP/wgT816rNwGRDcZdkQ/CeejGgp9eiHB17v/zZ/HqT/ with SALT penguins is: 826
 ```

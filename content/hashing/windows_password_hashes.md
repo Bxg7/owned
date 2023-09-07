@@ -6,11 +6,11 @@ date: 2019-01-31
 
 Create 3 users on Windows 2016 Server (i used evaluation version in VirtualBox)
 
-![hash1](/img/hash1.png)
+![hash1](hash1.png)
 
 Disable Realtime Virus Protection:
 
-![rtp](/img/rtp.png)
+![rtp](rtp.png)
 
 Create directory c:\mimikatz and open command prompt in this directory, then run this command to export the SAM database into the c:\mimikatz directory:
 
@@ -26,7 +26,7 @@ c:\mimikatz>mimikatz.exe
 
 In the mimikatz prompt run these commands:  
 
-```mk
+```sh
 log
 privilege::debug
 token::elevate
@@ -64,13 +64,13 @@ NTHash is a very weak and old password system:
 
 Grumpy cat does not approve:
 
-![grumpy](/img/grumpy.jpg)
+![grumpy](grumpy.jpg)
 
 ## Hash cracking with Google
 
 Since the password hashes have no variation (no salt used!) and any two users with the same password have the same hash you can use Google search engine to search for the hash that someone else might have already cracked:  
 
-![hash2](/img/hash2.png)
+![hash2](hash2.png)
 
 For the password that dennis uses in above example this will not work but we can just use the same bruteforce guessing attack as described in https://jwever.bitbucket.io/cryptography/hashing/md5/
 
