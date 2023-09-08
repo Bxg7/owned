@@ -1,1 +1,1 @@
-hugo && git add --all && git commit -m "default commit message" && git push
+hugo --cleanDestinationDir && git add --all && git commit -m "default commit message" && git push
