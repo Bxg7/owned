@@ -240,7 +240,7 @@ This means that if the client first requests the site with plain HTTP then sslst
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/data/ascii/</guid>
-      <description>Character set Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
+      <description>Character set . Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
 Example:
 character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
     </item>
@@ -263,18 +263,6 @@ iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local ma
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/dns/dns_spoofing/</guid>
-      <description>After we become the mitm we can spoof DNS answers, by modifying the rdata field in the DNS Response request packet.
-After spoofing the rdata field will contain a spoofed ip address of a attacker server instead of the original servers IP address.
-For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.
-To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:</description>
-    </item>
-    
-    <item>
-      <title>DNS spoofing</title>
-      <link>http://localhost/spoofing/dns_spoofing/</link>
-      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/spoofing/dns_spoofing/</guid>
       <description>After we become the mitm we can spoof DNS answers, by modifying the rdata field in the DNS Response request packet.
 After spoofing the rdata field will contain a spoofed ip address of a attacker server instead of the original servers IP address.
 For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.
@@ -352,6 +340,15 @@ To allow forwarding of packets between the victim and the gateway we need to ena
 When a device sends a packet to the broadcast MAC address (FF:FF:FF:FF:FF:FF), it is delivered to all stations on the local network.
 Arp request says: &amp;ldquo;who has 192.168.0.10?&amp;rdquo;
 If a host with ip 192.168.0.10 is online it will reply with an ARP reply message saying: &amp;ldquo;I have 192.168.0.10, my mac address is 00:22:33:44:55:66&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Session Management Intro</title>
+      <link>http://localhost/webapps/session_management_intro/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/webapps/session_management_intro/</guid>
+      <description>Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along. The session is basically just an object kept in memory by the Web Application so that it can identify each user. After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request.</description>
     </item>
     
     <item>

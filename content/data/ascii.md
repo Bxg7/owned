@@ -6,7 +6,7 @@ date: 2019-01-09
 # geekdocHidden: false
 ---
 
-* Character set 
+* Character set .
 * Often used to represent english language characters.  
 * Originally it was 7-bit binary, which gave us 128 unique characters.
 * The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character.

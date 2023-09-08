@@ -111,9 +111,6 @@
     <loc>http://localhost/dns/dns_spoofing/</loc>
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost/spoofing/dns_spoofing/</loc>
-    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost/data/hex/</loc>
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -126,14 +123,17 @@
     <loc>http://localhost/http/replace_download/</loc>
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost/spoofing/</loc>
-    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost/arp/arp_cache_poisoning/</loc>
     <lastmod>2019-01-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost/arp/arp_scanning/</loc>
     <lastmod>2019-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost/webapps/session_management_intro/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost/webapps/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost/collapse/level-1/</loc>
   </url><url>

@@ -34,7 +34,7 @@ Example: 0b01011101</description>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/data/ascii/</guid>
-      <description>Character set Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
+      <description>Character set . Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
 Example:
 character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
     </item>

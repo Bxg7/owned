@@ -12,8 +12,9 @@
 <meta name="generator" content="Hugo 0.118.2">
 
 
+  <meta name="description" content="Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along. The session is basically just an object kept in memory by the Web Application so that it can identify each user. After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request." />
 
-    <title>Hashing | Jelle&#39;s pentesting docs</title>
+    <title>Session Management Intro | Jelle&#39;s pentesting docs</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -34,43 +35,50 @@
     
   <meta
     property="og:title"
-    content="Hashing"
+    content="Session Management Intro"
   />
   <meta property="og:site_name" content="Jelle's pentesting docs" />
+  <meta property="og:description" content="Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along. The session is basically just an object kept in memory by the Web Application so that it can identify each user. After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost/hashing/" />
+<meta property="og:url" content="http://localhost/webapps/session_management_intro/" />
 
-<meta property="article:section" content="Hashing" />
+<meta property="article:section" content="Webapps" />
+    <meta
+      property="article:published_time"
+      content="2019-01-01T00:00:00+00:00"
+    />
     <meta
       property="article:modified_time"
-      content="2019-01-31T00:00:00+00:00"
+      content="2019-01-01T00:00:00+00:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Hashing" />
+<meta name="twitter:title" content="Session Management Intro" />
+  <meta name="twitter:description" content="Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along. The session is basically just an object kept in memory by the Web Application so that it can identify each user. After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Hashing",
-      "name": "Hashing",
-      "url" : "http://localhost/hashing/",
-      "headline": "Hashing",
-      "wordCount" : "0",
+      "articleSection": "Webapps",
+      "name": "Session Management Intro",
+      "url" : "http://localhost/webapps/session_management_intro/",
+      "headline": "Session Management Intro",
+      "description": "Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along. The session is basically just an object kept in memory by the Web Application so that it can identify each user. After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request.",
+      "wordCount" : "462",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost/hashing/"
+          "@id": "http://localhost/webapps/session_management_intro/"
       },
       "copyrightHolder" : "Jelle\u0027s pentesting docs",
       "copyrightYear" : "2019",
-      "dateCreated": "2019-01-31T00:00:00.00Z",
-      "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2019-01-31T00:00:00.00Z",
+      "dateCreated": "2019-01-01T00:00:00.00Z",
+      "datePublished": "2019-01-01T00:00:00.00Z",
+      "dateModified": "2019-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Jelle's pentesting docs",
@@ -148,7 +156,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="http://localhost/hashing/" rel="canonical" type="text/html" />
+  <link href="http://localhost/webapps/session_management_intro/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -1760,7 +1768,7 @@
                 <span class="flex">
                   <a
                     href="/webapps/session_management_intro/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Session Management Intro
                   </a>
@@ -2897,7 +2905,15 @@
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Documentation</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Hashing</span><meta itemprop='position' content='2' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Documentation</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/webapps/' href='/webapps/'><span itemprop='name'>Webapps</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Session Management Intro</span><meta itemprop='position' content='3' /></li>
+  
+
   
 
   
@@ -2913,8 +2929,40 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Hashing</h1>
-    
+    <h1>Session Management Intro</h1>
+    <ul>
+<li>Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along.</li>
+<li>The session is basically just an object kept in memory by the Web Application so that it can identify each user.</li>
+<li>After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request.</li>
+<li>In the browser this ID is usually stored as a cookie. So the browser will attach this cookie automatically with each new request. This way the server will actually know that its you.</li>
+<li>IMPORTANT NOTE: the session ID needs to be protected in some way, because it could be stolen by someone that can then hijack your session.</li>
+<li>A cookie can be either a session cookie which will be lost after you close the browser or it can be permanent which will then be written to disk when you close your browser and loaded again when you open the browser.</li>
+<li>Most cookies are used for marketing or tracking.</li>
+<li>The Set-Cookie HTTP response header is used to send cookies from the server to the user agent:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> <span class="nv">Expires</span><span class="o">=</span>&lt;date&gt;
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> Max-Age<span class="o">=</span>&lt;non-zero-digit&gt;
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> <span class="nv">Domain</span><span class="o">=</span>&lt;domain-value&gt;
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> <span class="nv">Path</span><span class="o">=</span>&lt;path-value&gt;
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> Secure
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> HttpOnly
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> <span class="nv">SameSite</span><span class="o">=</span>Strict
+</span></span><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> <span class="nv">SameSite</span><span class="o">=</span>Lax
+</span></span></code></pre></div><p>Multiple directives are also possible, for example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">Set-Cookie: &lt;cookie-name&gt;<span class="o">=</span>&lt;cookie-value&gt;<span class="p">;</span> <span class="nv">Domain</span><span class="o">=</span>&lt;domain-value&gt;<span class="p">;</span> Secure<span class="p">;</span> HttpOnly
+</span></span></code></pre></div><ul>
+<li>If the Path value is set to <a
+  class="gdoc-markdown__link"
+  href="http://www.reddit.com"
+>http://www.reddit.com</a> the cookie is also valid for all requests that come from reddit SUBDOMAINS.</li>
+<li>If there is no Domain value set the COOKIE is only valid for the domain that send it.</li>
+<li>HttpOnly is a flag added to cookies that tell the browser not to display the cookie through client-side scripts, so it can not be used by Javascript in any cross site scripting attacks.</li>
+<li>The Secure value is used to determine if the COOKIE should be sent only threw encrypted channels.</li>
+<li>SESSION ID NAME FINGERPRINTING: The session ID names used by the most common web application development frameworks can be easily fingerprinted, such as PHPSESSID (PHP), JSESSIONID (Tomcat/J2EE), CFID &amp; CFTOKEN (ColdFusion), ASP.NET_SessionId (ASP .NET), etc. Therefore, the session ID name can disclose the technologies and programming languages used by the web application. It is recommended to change the default session ID name of the web development framework to a generic name, such as “id”.</li>
+<li>SESSION ID LENGTH: The session ID must be long enough to prevent brute force attacks, where an attacker can go through the whole range of ID values and verify the existence of valid sessions. The session ID length must be at least 128 bits (16 bytes).</li>
+</ul>
+
   </article>
 
 
