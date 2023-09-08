@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jelle&#39;s pentesting docs</title>
+    <link>http://localhost/web/http/</link>
+    <description>Recent content on Jelle&#39;s pentesting docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/web/http/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSL stripping</title>
+      <link>http://localhost/web/http/ssl_stripping/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/web/http/ssl_stripping/</guid>
+      <description>https://moxie.org/software/sslstrip/
+Sslstrip requires that the connection between the client and the sslstrip instance is done over plain HTTP.
+The connection from sslstrip to the webserver can be either HTTP and HTTPS.
+This means that if the client first requests the site with plain HTTP then sslstrip works. If instead the clients starts already with HTTPS since it either knows that the site is only accessible by HTTPS or if the browser enforces HTTPS because of a HSTS policy (preloaded or from earlier visits) then sslstrip will not work.</description>
+    </item>
+    
+    <item>
+      <title>HTTP code injection &amp; BeEF</title>
+      <link>http://localhost/web/http/http_code_injection/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/web/http/http_code_injection/</guid>
+      <description>After we become the mitm we can modify HTTP responses by changing the Raw data on the fly.
+Since most clients will request [content encoding][http_compression] (by adding a &amp;ldquo;Accept-Encoding&amp;rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.
+This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!
+https://en.wikipedia.org/wiki/HTTP_compression
+We also need to make sure we change the size of the &amp;ldquo;Content-Length&amp;rdquo; value to match with our injected code.</description>
+    </item>
+    
+    <item>
+      <title>HTTP credentials sniffing</title>
+      <link>http://localhost/web/http/credentials_sniffer/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/web/http/credentials_sniffer/</guid>
+      <description>After we become the mitm we can sniff all HTTP requests. This time using scapy&amp;rsquo;s buildin sniffing function.
+In the code we are checking for HTTP credentials.
+To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
+Full code:
+import scapy.all as scapy from scapy.layers import http def sniff(interface): scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet) def get_url(packet): return packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path def get_login_info(packet): if packet.</description>
+    </item>
+    
+    <item>
+      <title>Modifying HTTP download response</title>
+      <link>http://localhost/web/http/replace_download/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/web/http/replace_download/</guid>
+      <description>After we become the mitm we can modify HTTP responses by changing the Raw data.
+In this case we check if the victim is downloading a .exe file and we are changing the response from the server so that it includes are own malicious payload.
+We do check against the destination port (dport) and source port (sport). When a sport is present it is a response, when a dport is present it is a request.</description>
+    </item>
+    
+  </channel>
+</rss>

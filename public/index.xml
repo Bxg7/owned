@@ -27,24 +27,6 @@ Install requirements Using the theme Option 1: Download pre-build release bundle
     </item>
     
     <item>
-      <title>First writeup</title>
-      <link>http://localhost/htb/first/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/htb/first/</guid>
-      <description>Hack the box writeup</description>
-    </item>
-    
-    <item>
-      <title>Getting Started</title>
-      <link>http://localhost/docs/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/docs/getting-started/</guid>
-      <description>Testing 123</description>
-    </item>
-    
-    <item>
       <title>Initial release</title>
       <link>http://localhost/posts/initial-release/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
@@ -96,10 +78,10 @@ It downloads the LaZagne credentials harvester (https://github.com/AlessandroZ/L
     
     <item>
       <title>One Time Pad</title>
-      <link>http://localhost/ciphers/otp/</link>
+      <link>http://localhost/cryptography/ciphers/otp/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/ciphers/otp/</guid>
+      <guid>http://localhost/cryptography/ciphers/otp/</guid>
       <description>One-time pad (OTP), also called Vernam-cipher or the perfect cipher, is a crypto algorithm where plaintext is combined with a random key.
 It is the only existing mathematically unbreakable encryption.
 Used by Special Operations teams and resistance groups during WW2, popular with intelligence agencies and their spies during the Cold War and beyond, protecting diplomatic and military message traffic around the world for many decades, the one-time pad gained a reputation as a simple yet solid encryption system with an absolute security which is unmatched by today&amp;rsquo;s modern crypto algorithms.</description>
@@ -107,10 +89,10 @@ Used by Special Operations teams and resistance groups during WW2, popular with 
     
     <item>
       <title>AES &amp; Padding Oracle Attack</title>
-      <link>http://localhost/strong_encryption/aes/</link>
+      <link>http://localhost/cryptography/strong_encryption/aes/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/strong_encryption/aes/</guid>
+      <guid>http://localhost/cryptography/strong_encryption/aes/</guid>
       <description>Under construction&amp;hellip;
 https://crypto.stackexchange.com/questions/3714/how-does-a-padding-oracle-attack-work https://resources.infosecinstitute.com/padding-oracle-attack-2/#gref https://tlseminar.github.io/padding-oracle/
 https://thebestvpn.com/advanced-encryption-standard-aes/
@@ -123,10 +105,10 @@ Then, think of the XOR operator as a &amp;lsquo;conditional flip&amp;rsquo; oper
     
     <item>
       <title>Linux Password Hash Cracking</title>
-      <link>http://localhost/hashing/linux_password_hashes/</link>
+      <link>http://localhost/cryptography/hashing/linux_password_hashes/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/hashing/linux_password_hashes/</guid>
+      <guid>http://localhost/cryptography/hashing/linux_password_hashes/</guid>
       <description>Create 3 users in Linux and set their passwords:
 sudo useradd -r -s /bin/false john sudo useradd -r -s /bin/false mary sudo useradd -r -s /bin/false dennis sudo passwd john (using P@ssw0rd as password) sudo passwd mary (using P@ssw0rd as password) sudo passwd dennis (using P@ssw0rd999 as password) The /etc/shadow contents:
 sudo cat /etc/shadow | grep -E &amp;#39;john|mary|dennis&amp;#39; john:$6$WvpWG7ls$IDqt8f/xBMC8h7IB57pWrQ3o06MATJjby7wkF2hqKN2y4k7HgPg7yCknlM.lSaftV4UI0ZauJnL.RWVOGD.jb.:17927:::::: mary:$6$pwiGPdMP$CvjOQZPsnAaWVRwWcOjimPWdNzucgCIh6DAVWF5io0zn0hzjWJPkVDpUX6OryYaOahRu4t5TxMXgXEqPkIfRK1:17927:::::: dennis:$6$nJO6qY4r$YfG8AWh22sncAusvM..92uzphXtnbEej1rpyP0yrYSQlI7XATA9PEknEb52PVHxXH5C/Oxo46ssMEwZG6PGJp1:17927:::::: After each username comes $6 which indicates this is a password type 6, meaning its hashed using SHA-512, which is the most modern and secure form of password hashing.</description>
@@ -134,10 +116,10 @@ sudo cat /etc/shadow | grep -E &amp;#39;john|mary|dennis&amp;#39; john:$6$WvpWG7
     
     <item>
       <title>Windows Password Hash Cracking</title>
-      <link>http://localhost/hashing/windows_password_hashes/</link>
+      <link>http://localhost/cryptography/hashing/windows_password_hashes/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/hashing/windows_password_hashes/</guid>
+      <guid>http://localhost/cryptography/hashing/windows_password_hashes/</guid>
       <description>Create 3 users on Windows 2016 Server (i used evaluation version in VirtualBox)
 Disable Realtime Virus Protection:
 Create directory c:\mimikatz and open command prompt in this directory, then run this command to export the SAM database into the c:\mimikatz directory:
@@ -148,19 +130,19 @@ log privilege::debug token::elevate lsadump::sam sam.</description>
     
     <item>
       <title>MD5 &amp; SHA Hashes</title>
-      <link>http://localhost/hashing/md5/</link>
+      <link>http://localhost/cryptography/hashing/md5/</link>
       <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/hashing/md5/</guid>
+      <guid>http://localhost/cryptography/hashing/md5/</guid>
       <description>What is a hash? A hash is a way to make a &amp;lsquo;fingerprint&amp;rsquo; of a file You take all the bytes of a file and combine them together using a hashing algorithm This creates a fixed length hash value Changing any part of the file will result in a completely different hash value when recalculating So when you have two files that are supposed to be identical, you can verify this by comparing the hashes.</description>
     </item>
     
     <item>
       <title>XOR Cipher</title>
-      <link>http://localhost/ciphers/xor/</link>
+      <link>http://localhost/cryptography/ciphers/xor/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/ciphers/xor/</guid>
+      <guid>http://localhost/cryptography/ciphers/xor/</guid>
       <description>In cryptography, the simple XOR cipher is a type of additive cipher.
 XOR is short for exclusive or. It is a bitwise operator.
 If one of the two operands, but not both are true, the statement is true.
@@ -182,10 +164,10 @@ If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, int
     
     <item>
       <title>Caesar Cipher &amp; ROT13</title>
-      <link>http://localhost/ciphers/caesar_cipher/</link>
+      <link>http://localhost/cryptography/ciphers/caesar_cipher/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/ciphers/caesar_cipher/</guid>
+      <guid>http://localhost/cryptography/ciphers/caesar_cipher/</guid>
       <description>Caesar Cipher The Caesar cipher is one of the earliest known and simplest ciphers.
 It is a type of substitution cipher in which each letter in the plaintext is &amp;lsquo;shifted&amp;rsquo; 3 numbers of places down the alphabet.
 In python we first define an alphabet string. When the ask for user input. We store the length of the user input into the n variable. We then iterate over each character in the string and find its location within the alphabet string and store it in the loc variable.</description>
@@ -224,10 +206,10 @@ Example: 0b01011101</description>
     
     <item>
       <title>SSL stripping</title>
-      <link>http://localhost/http/ssl_stripping/</link>
+      <link>http://localhost/web/http/ssl_stripping/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/http/ssl_stripping/</guid>
+      <guid>http://localhost/web/http/ssl_stripping/</guid>
       <description>https://moxie.org/software/sslstrip/
 Sslstrip requires that the connection between the client and the sslstrip instance is done over plain HTTP.
 The connection from sslstrip to the webserver can be either HTTP and HTTPS.
@@ -284,10 +266,10 @@ A value in HEX is often represented by prepending the prefix 0x to the value.</d
     
     <item>
       <title>HTTP code injection &amp; BeEF</title>
-      <link>http://localhost/http/http_code_injection/</link>
+      <link>http://localhost/web/http/http_code_injection/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/http/http_code_injection/</guid>
+      <guid>http://localhost/web/http/http_code_injection/</guid>
       <description>After we become the mitm we can modify HTTP responses by changing the Raw data on the fly.
 Since most clients will request [content encoding][http_compression] (by adding a &amp;ldquo;Accept-Encoding&amp;rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.
 This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!
@@ -297,10 +279,10 @@ We also need to make sure we change the size of the &amp;ldquo;Content-Length&am
     
     <item>
       <title>HTTP credentials sniffing</title>
-      <link>http://localhost/http/credentials_sniffer/</link>
+      <link>http://localhost/web/http/credentials_sniffer/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/http/credentials_sniffer/</guid>
+      <guid>http://localhost/web/http/credentials_sniffer/</guid>
       <description>After we become the mitm we can sniff all HTTP requests. This time using scapy&amp;rsquo;s buildin sniffing function.
 In the code we are checking for HTTP credentials.
 To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
@@ -310,10 +292,10 @@ import scapy.all as scapy from scapy.layers import http def sniff(interface): sc
     
     <item>
       <title>Modifying HTTP download response</title>
-      <link>http://localhost/http/replace_download/</link>
+      <link>http://localhost/web/http/replace_download/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/http/replace_download/</guid>
+      <guid>http://localhost/web/http/replace_download/</guid>
       <description>After we become the mitm we can modify HTTP responses by changing the Raw data.
 In this case we check if the victim is downloading a .exe file and we are changing the response from the server so that it includes are own malicious payload.
 We do check against the destination port (dport) and source port (sport). When a sport is present it is a response, when a dport is present it is a request.</description>
@@ -344,10 +326,10 @@ If a host with ip 192.168.0.10 is online it will reply with an ARP reply message
     
     <item>
       <title>Session Management Intro</title>
-      <link>http://localhost/webapps/session_management_intro/</link>
+      <link>http://localhost/web/webapps/session_management_intro/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/webapps/session_management_intro/</guid>
+      <guid>http://localhost/web/webapps/session_management_intro/</guid>
       <description>Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along. The session is basically just an object kept in memory by the Web Application so that it can identify each user. After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request.</description>
     </item>
     
@@ -480,29 +462,11 @@ File-tree menu Bundle menu More menu File-tree menu As the name already suggests
     
     <item>
       <title>Level 1.1</title>
-      <link>http://localhost/collapse/level-1/level-1-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/collapse/level-1/level-1-1/</guid>
-      <description>Level 1.1</description>
-    </item>
-    
-    <item>
-      <title>Level 1.1</title>
       <link>http://localhost/toc-tree/level-1/level-1-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/toc-tree/level-1/level-1-1/</guid>
       <description>Level 1.1</description>
-    </item>
-    
-    <item>
-      <title>Level 1.2</title>
-      <link>http://localhost/collapse/level-1/level-1-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/collapse/level-1/level-1-2/</guid>
-      <description>Level 1.2</description>
     </item>
     
     <item>
@@ -525,29 +489,11 @@ File-tree menu Bundle menu More menu File-tree menu As the name already suggests
     
     <item>
       <title>Level 2.1</title>
-      <link>http://localhost/collapse/level-2/level-2-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/collapse/level-2/level-2-1/</guid>
-      <description>Level 2.1</description>
-    </item>
-    
-    <item>
-      <title>Level 2.1</title>
       <link>http://localhost/toc-tree/level-2/level-2-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/toc-tree/level-2/level-2-1/</guid>
       <description>Level 2.1</description>
-    </item>
-    
-    <item>
-      <title>Level 2.2</title>
-      <link>http://localhost/collapse/level-2/level-2-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/collapse/level-2/level-2-2/</guid>
-      <description>Level 2.2</description>
     </item>
     
     <item>
