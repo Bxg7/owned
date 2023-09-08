@@ -7,7 +7,7 @@ date: 2019-01-06
 ---
 
 With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.  
-We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept & inspect all data...
+We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept & inspect all data.
 
 To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:
 
