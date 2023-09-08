@@ -23,3 +23,5 @@ enableRobotsTXT = true
 
 [taxonomies]
    tag = "tags"
+   
+
