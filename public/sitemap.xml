@@ -23,6 +23,12 @@
     <loc>http://localhost/web/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
   </url><url>
+    <loc>http://localhost/various/books/</loc>
+    <lastmod>2023-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost/various/</loc>
+    <lastmod>2023-01-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost/malware/backdoor/</loc>
     <lastmod>2023-09-07T21:48:29+07:00</lastmod>
   </url><url>
@@ -90,7 +96,7 @@
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
   </url><url>
     <loc>http://localhost/arp/arp_cache_poisoning/</loc>
-    <lastmod>2023-09-09T19:50:51+07:00</lastmod>
+    <lastmod>2023-09-09T19:51:47+07:00</lastmod>
   </url><url>
     <loc>http://localhost/arp/arp_scanning/</loc>
     <lastmod>2023-09-06T19:04:45+07:00</lastmod>
