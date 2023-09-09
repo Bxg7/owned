@@ -5,7 +5,6 @@
     <link>http://localhost/cryptography/</link>
     <description>Recent content in cryptography on Jelle&#39;s pentesting docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://localhost/cryptography/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

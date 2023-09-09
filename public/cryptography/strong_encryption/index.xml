@@ -5,8 +5,7 @@
     <link>http://localhost/cryptography/strong_encryption/</link>
     <description>Recent content on Jelle&#39;s pentesting docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/cryptography/strong_encryption/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://localhost/cryptography/strong_encryption/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AES &amp; Padding Oracle Attack</title>
       <link>http://localhost/cryptography/strong_encryption/aes/</link>

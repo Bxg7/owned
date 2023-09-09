@@ -5,8 +5,7 @@
     <link>http://localhost/data/</link>
     <description>Recent content in data on Jelle&#39;s pentesting docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 16 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost/data/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://localhost/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Base64</title>
       <link>http://localhost/data/base64_encoding/</link>
