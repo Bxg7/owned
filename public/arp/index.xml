@@ -23,7 +23,7 @@ Some words on defense: https://security.stackexchange.com/questions/161173/how-e
       <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/arp/arp_cache_poisoning/</guid>
-      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router&amp;hellip; We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data.
+      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.. We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data.
 To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:</description>
     </item>
     

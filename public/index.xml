@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documentation on Jelle&#39;s pentesting docs</title>
+    <title>Home on Jelle&#39;s pentesting docs</title>
     <link>http://localhost/</link>
-    <description>Recent content in Documentation on Jelle&#39;s pentesting docs</description>
+    <description>Recent content in Home on Jelle&#39;s pentesting docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -268,7 +268,7 @@ We do check against the destination port (dport) and source port (sport). When a
       <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/arp/arp_cache_poisoning/</guid>
-      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router&amp;hellip; We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data.
+      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.. We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data.
 To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:</description>
     </item>
     
