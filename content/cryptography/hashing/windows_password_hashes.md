@@ -72,7 +72,7 @@ Since the password hashes have no variation (no salt used!) and any two users wi
 
 ![hash2](hash2.png)
 
-For the password that dennis uses in above example this will not work but we can just use the same bruteforce guessing attack as described in https://jwever.bitbucket.io/cryptography/hashing/md5/
+For the password that dennis uses in above example this will not work but we can just use the same bruteforce guessing attack as described in https://jellepelle.github.io/doc_the_hacks/cryptography/hashing/md5/
 
 Example of cracking a 7 digit password (10^7 = 10000000 passwords):
 
