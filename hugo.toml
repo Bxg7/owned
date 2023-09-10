@@ -1,5 +1,5 @@
 baseURL = "http://localhost"
-title = "Jelle's pentesting docs"
+title = "My pentesting docs"
 theme = "hugo-geekdoc"
 
 # Required to get well formatted code blocks
