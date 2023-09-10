@@ -28,15 +28,6 @@ iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local ma
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>http://localhost/posts/my-first-post/</link>
-      <pubDate>Sat, 09 Sep 2023 21:43:00 +0700</pubDate>
-      
-      <guid>http://localhost/posts/my-first-post/</guid>
-      <description>Bla bla</description>
-    </item>
-    
-    <item>
       <title>Books</title>
       <link>http://localhost/various/books/</link>
       <pubDate>Fri, 06 Jan 2023 00:00:00 +0000</pubDate>
