@@ -1,5 +1,5 @@
 baseURL = "http://localhost"
-title = "Bxg7 owned"
+title = "Bxg7 Pentesting Docs"
 theme = "hugo-geekdoc"
 
 # Required to get well formatted code blocks
