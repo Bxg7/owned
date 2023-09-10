@@ -1,9 +1,6 @@
 ---
 title: "DNS request sniffing"
-date: 2019-01-09
-# geekdocFlatSection: false
-# geekdocToc: 6
-# geekdocHidden: false
+date: 2023-09-09T21:43:00+07:00
 ---
 
 After we become the [mitm][arp_cache_poisoning] we can sniff the DNS Question Record's QNAME field.  

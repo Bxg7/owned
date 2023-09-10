@@ -88,3 +88,7 @@ enableRobotsTXT = true
   # if a subdirectory is used within Hugos BaseURL.
   # See https://developer.mozilla.org/de/docs/Web/HTML/Element/base.
   geekdocOverwriteHTMLBase = false
+
+  # Set type to 'posts' if you want to render page as blogpost
+  type = "posts"
+

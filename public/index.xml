@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Jelle&#39;s pentesting docs</title>
+    <title>Home on Jelle&#39;s pentesting docs</title>
     <link>http://localhost/</link>
-    <description>Recent content in About on Jelle&#39;s pentesting docs</description>
+    <description>Recent content in Home on Jelle&#39;s pentesting docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost/dns/my-first-post/</link>
+      <pubDate>Sat, 09 Sep 2023 21:47:54 +0700</pubDate>
+      
+      <guid>http://localhost/dns/my-first-post/</guid>
+      <description>Test</description>
+    </item>
+    
+    <item>
+      <title>DNS request sniffing</title>
+      <link>http://localhost/dns/dns_request_sniffing/</link>
+      <pubDate>Sat, 09 Sep 2023 21:43:00 +0700</pubDate>
+      
+      <guid>http://localhost/dns/dns_request_sniffing/</guid>
+      <description>After we become the mitm we can sniff the DNS Question Record&amp;rsquo;s QNAME field.
+I am using netfilterqueue here, but it could be done without it as well because we are not modifying any packets on the fly, we are only inspecting.
+To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
+iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local machine:</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost/posts/my-first-post/</link>
+      <pubDate>Sat, 09 Sep 2023 21:43:00 +0700</pubDate>
+      
+      <guid>http://localhost/posts/my-first-post/</guid>
+      <description>Bla bla</description>
+    </item>
+    
     <item>
       <title>Books</title>
       <link>http://localhost/various/books/</link>
@@ -195,18 +225,6 @@ This means that if the client first requests the site with plain HTTP then sslst
       <description>Character set . Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
 Example:
 character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
-    </item>
-    
-    <item>
-      <title>DNS request sniffing</title>
-      <link>http://localhost/dns/dns_request_sniffing/</link>
-      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/dns/dns_request_sniffing/</guid>
-      <description>After we become the mitm we can sniff the DNS Question Record&amp;rsquo;s QNAME field.
-I am using netfilterqueue here, but it could be done without it as well because we are not modifying any packets on the fly, we are only inspecting.
-To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
-iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local machine:</description>
     </item>
     
     <item>
