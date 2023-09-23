@@ -14,7 +14,7 @@ We do check against the destination port (dport) and source port (sport). When a
 For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.  
 To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:  
 
-[arp_cache_poisoning]: https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/
+[arp_cache_poisoning]: https://bxg7.github.io/owned/arp/arp_cache_poisoning/
 
 ```sh
 iptables -I FORWARD -j NFQUEUE --queue-num 0

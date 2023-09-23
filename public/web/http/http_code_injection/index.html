@@ -2302,7 +2302,7 @@ We also need to make sure we change the size of the “Content-Length” value t
     <h1>HTTP code injection &amp; BeEF</h1>
     <p>After we become the <a
   class="gdoc-markdown__link"
-  href="https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/"
+  href="https://bxg7.github.io/owned/arp/arp_cache_poisoning/"
 >mitm</a> we can modify HTTP responses by changing the Raw data on the fly.</p>
 <p>Since most clients will request [content encoding][http_compression] (by adding a &ldquo;Accept-Encoding&rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.<br>
 This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!<br>

@@ -8,7 +8,7 @@ date: 2019-01-09
 
 After we become the [mitm][arp_cache_poisoning] we can modify HTTP responses by changing the Raw data on the fly.  
 
-[arp_cache_poisoning]: https://jellepelle.github.io/doc_the_hacks/arp/arp_cache_poisoning/
+[arp_cache_poisoning]: https://bxg7.github.io/owned/arp/arp_cache_poisoning/
 
 Since most clients will request [content encoding][http_compression] (by adding a "Accept-Encoding" header), the HTTP response data (scapy.Raw layer) will look like gibberish.  
 This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!  
