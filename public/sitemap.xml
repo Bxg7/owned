@@ -29,11 +29,8 @@
     <loc>http://localhost/web/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
   </url><url>
-    <loc>http://localhost/dns/my-first-post/</loc>
-    <lastmod>2023-09-10T10:23:58+07:00</lastmod>
-  </url><url>
     <loc>http://localhost/dns/dns_request_sniffing/</loc>
-    <lastmod>2023-09-16T17:56:29+07:00</lastmod>
+    <lastmod>2023-09-23T18:58:59+07:00</lastmod>
   </url><url>
     <loc>http://localhost/various/books/</loc>
     <lastmod>2023-09-09T20:33:35+07:00</lastmod>
@@ -87,19 +84,19 @@
     <lastmod>2023-09-08T08:39:29+07:00</lastmod>
   </url><url>
     <loc>http://localhost/dns/dns_spoofing/</loc>
-    <lastmod>2023-09-07T10:34:46+07:00</lastmod>
+    <lastmod>2023-09-23T18:58:59+07:00</lastmod>
   </url><url>
     <loc>http://localhost/data/hex/</loc>
     <lastmod>2023-09-07T10:28:06+07:00</lastmod>
   </url><url>
     <loc>http://localhost/web/http/http_code_injection/</loc>
-    <lastmod>2023-09-08T09:10:57+07:00</lastmod>
+    <lastmod>2023-09-23T18:58:59+07:00</lastmod>
   </url><url>
     <loc>http://localhost/web/http/credentials_sniffer/</loc>
-    <lastmod>2023-09-08T09:10:57+07:00</lastmod>
+    <lastmod>2023-09-23T18:58:59+07:00</lastmod>
   </url><url>
     <loc>http://localhost/web/http/replace_download/</loc>
-    <lastmod>2023-09-08T09:10:57+07:00</lastmod>
+    <lastmod>2023-09-23T18:58:59+07:00</lastmod>
   </url><url>
     <loc>http://localhost/arp/arp_cache_poisoning/</loc>
     <lastmod>2023-09-09T19:51:47+07:00</lastmod>
