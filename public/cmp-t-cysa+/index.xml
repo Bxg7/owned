@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>comp.t.cysa&#43; on Bxg7 Pentesting Docs</title>
+    <link>http://localhost/cmp-t-cysa&#43;/</link>
+    <description>Recent content in comp.t.cysa&#43; on Bxg7 Pentesting Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost/cmp-t-cysa+/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber Security Analyst role &amp; SOC</title>
+      <link>http://localhost/cmp-t-cysa&#43;/cybersecurity_analyst_and_soc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/cybersecurity_analyst_and_soc/</guid>
+      <description>What role does the Cyber Security Analyst have?
+-implements and configures security controls -has a role in the SOC or CSIRT -auditing security processes and procedures (internal and external, ie: on 3rd parties ) -performing risk, vulnerability assesments and penetration tests and recommending appropriate security controls &amp;amp; procedures as a result -keep themselves informed &amp;amp; up-to-date so they can give threat intel,spread awareness and advice on legal, compliance and regulatory issues</description>
+    </item>
+    
+  </channel>
+</rss>

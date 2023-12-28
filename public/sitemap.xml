@@ -5,8 +5,10 @@
     <loc>http://localhost/arp/</loc>
     <lastmod>2023-09-28T19:45:07+07:00</lastmod>
   </url><url>
+    <loc>http://localhost/cmp-t-cysa&#43;/</loc>
+  </url><url>
     <loc>http://localhost/cmp-t-pentest&#43;/</loc>
-    <lastmod>2023-12-28T17:12:46+07:00</lastmod>
+    <lastmod>2023-12-28T17:18:25+07:00</lastmod>
   </url><url>
     <loc>http://localhost/cryptography/</loc>
     <lastmod>2023-09-28T19:45:07+07:00</lastmod>
@@ -121,6 +123,8 @@
   </url><url>
     <loc>http://localhost/web/webapps/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost/cmp-t-cysa&#43;/cybersecurity_analyst_and_soc/</loc>
   </url><url>
     <loc>http://localhost/</loc>
     <lastmod>2023-12-28T17:06:40+07:00</lastmod>
