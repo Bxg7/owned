@@ -308,8 +308,11 @@ If a host with ip 192.168.0.10 is online it will reply with an ARP reply message
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/cmp-t-cysa&#43;/cybersecurity_analyst_and_soc/</guid>
-      <description>What role does the Cyber Security Analyst have?
--implements and configures security controls -has a role in the SOC or CSIRT -auditing security processes and procedures (internal and external, ie: on 3rd parties ) -performing risk, vulnerability assesments and penetration tests and recommending appropriate security controls &amp;amp; procedures as a result -keep themselves informed &amp;amp; up-to-date so they can give threat intel,spread awareness and advice on legal, compliance and regulatory issues</description>
+      <description>What is a Cyber Security Analyst?
+A senior position within an organisation security team with direct responsibility for protecting sensitive information and preventing unauthorized access to electronic data and the systems that protect it.
+Any device that processes or uses the organisations information is covered by the role of a Cyber Security Analyst.
+Cybersecurity teams contain junior &amp;amp; senior analysts.
+Analysts are expected to have years of experience working within IT and IT Security.</description>
     </item>
     
     <item>
@@ -339,6 +342,15 @@ If you are a Cybersec analyst (blue teamer) you&amp;rsquo;re job is to minimize 
 If you are working as a pentester you&amp;rsquo;re job is to find and exploit vulnerabilities to proof that the network is truelly vulnerable to an outside attack.
 Vulnerability = any weakness in the system design or implementation
 Threat = anything that could cause harm, loss, damage or compromise to IT systems.</description>
+    </item>
+    
+    <item>
+      <title>Threat Intelligence Cycle</title>
+      <link>http://localhost/cmp-t-cysa&#43;/threat_intelligence_cycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/threat_intelligence_cycle/</guid>
+      <description>Threat Intelligence Cycle</description>
     </item>
     
   </channel>
