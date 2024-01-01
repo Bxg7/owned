@@ -1,5 +1,5 @@
 ---
-title: "Cyber Security Analyst role & SOC"
+title: "Cyber Security Analyst Role"
 # geekdocFlatSection: false
 # geekdocToc: 6
 # geekdocHidden: false
@@ -32,14 +32,3 @@ Job requirements (nice to have):
 * non technical language skills
 * detail oriented
 * calm
-
-Security Operation Center, what is it & what does it do?
-
-* supported by policies
-* balanced presence
-* motivated staff (more important then you think)
-* skilled staff
-* equipped for incident response
-* able to protect itself
-* focus on important alerts
-* plays well with others

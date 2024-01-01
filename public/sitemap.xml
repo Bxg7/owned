@@ -5,6 +5,10 @@
     <loc>http://localhost/arp/</loc>
     <lastmod>2023-09-28T19:45:07+07:00</lastmod>
   </url><url>
+    <loc>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/</loc>
+  </url><url>
+    <loc>http://localhost/cmp-t-cysa&#43;/threat_intel/</loc>
+  </url><url>
     <loc>http://localhost/cmp-t-cysa&#43;/</loc>
     <lastmod>2023-12-28T18:54:05+07:00</lastmod>
   </url><url>
@@ -110,6 +114,12 @@
     <loc>http://localhost/web/webapps/session_management_intro/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
   </url><url>
+    <loc>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/security_controls/</loc>
+  </url><url>
+    <loc>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/selecting_controls/</loc>
+  </url><url>
+    <loc>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/soc/</loc>
+  </url><url>
     <loc>http://localhost/cryptography/ciphers/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
   </url><url>
@@ -125,8 +135,7 @@
     <loc>http://localhost/web/webapps/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
   </url><url>
-    <loc>http://localhost/cmp-t-cysa&#43;/cybersecurity_analyst_and_soc/</loc>
-    <lastmod>2023-12-28T18:54:05+07:00</lastmod>
+    <loc>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/cybersecurity_analyst_and_soc/</loc>
   </url><url>
     <loc>http://localhost/</loc>
     <lastmod>2023-12-28T17:06:40+07:00</lastmod>
@@ -139,6 +148,6 @@
   </url><url>
     <loc>http://localhost/tags/</loc>
   </url><url>
-    <loc>http://localhost/cmp-t-cysa&#43;/threat_intelligence_cycle/</loc>
+    <loc>http://localhost/cmp-t-cysa&#43;/threat_intel/threat_intelligence_cycle/</loc>
   </url>
 </urlset>

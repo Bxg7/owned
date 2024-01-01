@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>roles_and_responsibilities on Bxg7 Pentesting Docs</title>
+    <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/</link>
+    <description>Recent content in roles_and_responsibilities on Bxg7 Pentesting Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost/cmp-t-cysa+/roles_and_responsibilities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/security_controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/security_controls/</guid>
+      <description>Security Controls mitigates vulnerabilities and risk to ensure the confidentiality, integrity,availability, nonrepudiation, and authentication of data Security controls should be selected and deployed in a structured manner using a risk management framework Security Controls are classified using a special publication by NIST called &amp;ldquo;NIST SP 800-53&amp;rdquo;. Its not needed to know this document for the exam but its useful for daily work. Some examples of Security Control Categories from this document are:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/selecting_controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/selecting_controls/</guid>
+      <description> How to select the right control for the right job? By using CIA (Confidentiality, Integrity or Availability)
+Examples:
+encryption = confidentiality digital signatures = integrity scaling up cloud resources = availability None of these technologies can provide CIA alone, but combined uphold the three tenets of security </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/soc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/soc/</guid>
+      <description>Security Operation Center, what is it &amp;amp; what does it do?
+A SOC is a location where security professionals monitor and protect critical information assets in an organization. SOCs usually exist for larger corporations, goverment agencies and health care organisations (this is because its costly for smaller orgs who usually outsource it) In order to be succesfull every SOC needs: Have the authority to operate (supported by policies) Have motivated and skilled staff (more important then you think) Incorporate processes into a single operations center equipped to perform incident response able to protect itself and the organisation at large Can seperate the signal from the noise Collaborate with other SOCs for data sharing The SOC should be the single point of contact for security, monitoring and incident respons </description>
+    </item>
+    
+    <item>
+      <title>Cyber Security Analyst Role</title>
+      <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/cybersecurity_analyst_and_soc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/cybersecurity_analyst_and_soc/</guid>
+      <description>What is a Cyber Security Analyst?
+A senior position within an organisation security team with direct responsibility for protecting sensitive information and preventing unauthorized access to electronic data and the systems that protect it.
+Any device that processes or uses the organisations information is covered by the role of a Cyber Security Analyst.
+Cybersecurity teams contain junior &amp;amp; senior analysts.
+Analysts are expected to have years of experience working within IT and IT Security.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>threat_intel on Bxg7 Pentesting Docs</title>
+    <link>http://localhost/cmp-t-cysa&#43;/threat_intel/</link>
+    <description>Recent content in threat_intel on Bxg7 Pentesting Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost/cmp-t-cysa+/threat_intel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Threat Intelligence Cycle</title>
+      <link>http://localhost/cmp-t-cysa&#43;/threat_intel/threat_intelligence_cycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/threat_intelligence_cycle/</guid>
+      <description>Threat Intelligence Cycle</description>
+    </item>
+    
+  </channel>
+</rss>
