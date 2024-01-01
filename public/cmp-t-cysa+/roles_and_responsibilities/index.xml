@@ -21,9 +21,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/selecting_controls/</guid>
-      <description> How to select the right control for the right job? By using CIA (Confidentiality, Integrity or Availability)
+      <description> How to select the right control for the right job? By using the three tenets of security, also known as CIA (Confidentiality, Integrity or Availability)
 Examples:
-encryption = confidentiality digital signatures = integrity scaling up cloud resources = availability None of these technologies can provide CIA alone, but combined uphold the three tenets of security </description>
+encryption = confidentiality digital signatures = integrity scaling up cloud resources = availability None of these technologies can provide CIA alone, but combined they uphold the three tenets of security </description>
     </item>
     
     <item>

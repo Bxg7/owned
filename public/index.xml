@@ -317,9 +317,9 @@ If a host with ip 192.168.0.10 is online it will reply with an ARP reply message
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/selecting_controls/</guid>
-      <description> How to select the right control for the right job? By using CIA (Confidentiality, Integrity or Availability)
+      <description> How to select the right control for the right job? By using the three tenets of security, also known as CIA (Confidentiality, Integrity or Availability)
 Examples:
-encryption = confidentiality digital signatures = integrity scaling up cloud resources = availability None of these technologies can provide CIA alone, but combined uphold the three tenets of security </description>
+encryption = confidentiality digital signatures = integrity scaling up cloud resources = availability None of these technologies can provide CIA alone, but combined they uphold the three tenets of security </description>
     </item>
     
     <item>
@@ -330,6 +330,29 @@ encryption = confidentiality digital signatures = integrity scaling up cloud res
       <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/soc/</guid>
       <description>Security Operation Center, what is it &amp;amp; what does it do?
 A SOC is a location where security professionals monitor and protect critical information assets in an organization. SOCs usually exist for larger corporations, goverment agencies and health care organisations (this is because its costly for smaller orgs who usually outsource it) In order to be succesfull every SOC needs: Have the authority to operate (supported by policies) Have motivated and skilled staff (more important then you think) Incorporate processes into a single operations center equipped to perform incident response able to protect itself and the organisation at large Can seperate the signal from the noise Collaborate with other SOCs for data sharing The SOC should be the single point of contact for security, monitoring and incident respons </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence/</guid>
+      <description>Security Intelligence is the process where data is generated and is then collected, processed, analyzed, and disseminated to provide insights into the security status of information systems Cyber Threat Intelligence is the investigation, collection, analysis and dissemination of information about emerging threats and threat sources to provide data about the external threat landscape
+So the difference between these two is: Security Intelligence is looking INWARD (how are our systems looking), while Cyber Threat Intelligence is looking OUTWARD (what are the attacker groups up to, what are the malware outbreaks or zero-day exploits.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</guid>
+      <description>Intelligence is a process
+Requirements (Planning &amp;amp; Direction) Sets out the goals for the intelligence gathering effort (what do we wanna collec? what do we care about?)
+Collection &amp;amp; Processing Implemented by software tools such as SIEMS to gather data which is then processed for later analysis.
+The processing part is where we will convert all the data into a standard format.
+Analysis Performed against the given use cases from the planning phase and may utilize automated analysis, AI, and machine learning.</description>
     </item>
     
     <item>
@@ -372,15 +395,6 @@ If you are a Cybersec analyst (blue teamer) you&amp;rsquo;re job is to minimize 
 If you are working as a pentester you&amp;rsquo;re job is to find and exploit vulnerabilities to proof that the network is truelly vulnerable to an outside attack.
 Vulnerability = any weakness in the system design or implementation
 Threat = anything that could cause harm, loss, damage or compromise to IT systems.</description>
-    </item>
-    
-    <item>
-      <title>Threat Intelligence Cycle</title>
-      <link>http://localhost/cmp-t-cysa&#43;/threat_intel/threat_intelligence_cycle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/threat_intelligence_cycle/</guid>
-      <description>Threat Intelligence Cycle</description>
     </item>
     
   </channel>
