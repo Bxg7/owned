@@ -344,6 +344,16 @@ So the difference between these two is: Security Intelligence is looking INWARD 
     
     <item>
       <title></title>
+      <link>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence_sources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence_sources/</guid>
+      <description>We have to identify some factors to weigh the value of the intelligence that we are getting:
+Timeliness (ensures an intel source is up-to-date) Relevancy (ensures an intel source matches its intended use case) Accuracy (ensures an intel source produces effective results. IE: the information needs to be valid &amp;amp; true. Eliminating false positives is important.) Confidence level (ensures an intel source produces qualified statements about reliability. &amp;ldquo;Putting a grade on how good this information is&amp;rdquo;) The three place where you can get information from is:</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
