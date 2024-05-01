@@ -4,7 +4,8 @@
     <title>cryptography on Bxg7 Pentesting Docs</title>
     <link>http://localhost/cryptography/</link>
     <description>Recent content in cryptography on Bxg7 Pentesting Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost/cryptography/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

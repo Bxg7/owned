@@ -4,52 +4,36 @@
     <title>data on Bxg7 Pentesting Docs</title>
     <link>http://localhost/data/</link>
     <description>Recent content in data on Bxg7 Pentesting Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/data/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Base64</title>
       <link>http://localhost/data/base64_encoding/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/base64_encoding/</guid>
-      <description>Base-64 encoding is a way encoding binary data into ASCII text so that it&amp;rsquo;s more easily transmitted in things like e-mail and HTML form data.
-Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits.
-If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, interpreted as 3 groups of 8 bits.</description>
+      <description>Base-64 encoding is a way encoding binary data into ASCII text so that it&amp;rsquo;s more easily transmitted in things like e-mail and HTML form data.&#xA;Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits.&#xA;If you have an ASCI string of 3 characters (=3 bytes) it turns into 24 bits, interpreted as 3 groups of 8 bits.</description>
     </item>
-    
     <item>
       <title>Binary</title>
       <link>http://localhost/data/binary/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/binary/</guid>
-      <description>Binary is Base 2, unlike our Decimal counting system which is Base 10. In other words, Binary has only 2 different numerals (0 and 1) to denote a value, unlike Decimal which has 10 numerals (0,1,2,3,4,5,6,7,8 and 9). A value in binary is sometimes represented by prepending the prefix 0b to the value.
-Example: 0b01011101</description>
+      <description>Binary is Base 2, unlike our Decimal counting system which is Base 10. In other words, Binary has only 2 different numerals (0 and 1) to denote a value, unlike Decimal which has 10 numerals (0,1,2,3,4,5,6,7,8 and 9). A value in binary is sometimes represented by prepending the prefix 0b to the value.&#xA;Example: 0b01011101</description>
     </item>
-    
     <item>
       <title>ASCII</title>
       <link>http://localhost/data/ascii/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/ascii/</guid>
-      <description>Character set . Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.
-Example:
-character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
+      <description>Character set . Often used to represent english language characters. Originally it was 7-bit binary, which gave us 128 unique characters. The current standard is 8-bit (1 byte) or equivalently 2 hex digits per character. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as &amp;lsquo;a&amp;rsquo; or &amp;lsquo;1&amp;rsquo;.&#xA;Example:&#xA;character &amp;ldquo;1&amp;rdquo; hex 0x31 first nibble = 3 which is 0011 in binary (count the weight of the columns: 8421) second nibble = 1 = which is 0001 in binary (count the weight of the columns: 8421) The full byte binary value is 0011 0001 which is 49 in decimal (32+16+1) The key thing to remember: the character &amp;ldquo;1&amp;rdquo; is NOT the same thing as the number 1.</description>
     </item>
-    
     <item>
       <title>Hex</title>
       <link>http://localhost/data/hex/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/data/hex/</guid>
-      <description>Hexadecimal is a base 16 system used to simplify how binary is represented.
-A hex digit can be any of the following 16 digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F.
-Every HEX digit is represented by a sequence of 4 bits (also sometimes called a &amp;ldquo;nibble&amp;rdquo;).
-4 bits is exactly half of a byte, which is 8 bits.
-A value in HEX is often represented by prepending the prefix 0x to the value.</description>
+      <description>Hexadecimal is a base 16 system used to simplify how binary is represented.&#xA;A hex digit can be any of the following 16 digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F.&#xA;Every HEX digit is represented by a sequence of 4 bits (also sometimes called a &amp;ldquo;nibble&amp;rdquo;).&#xA;4 bits is exactly half of a byte, which is 8 bits.&#xA;A value in HEX is often represented by prepending the prefix 0x to the value.</description>
     </item>
-    
   </channel>
 </rss>

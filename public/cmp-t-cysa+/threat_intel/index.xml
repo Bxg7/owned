@@ -4,40 +4,29 @@
     <title>threat_intel on Bxg7 Pentesting Docs</title>
     <link>http://localhost/cmp-t-cysa&#43;/threat_intel/</link>
     <description>Recent content in threat_intel on Bxg7 Pentesting Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/cmp-t-cysa+/threat_intel/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost/cmp-t-cysa+/threat_intel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence/</guid>
-      <description>Security Intelligence is the process where data is generated and is then collected, processed, analyzed, and disseminated to provide insights into the security status of information systems Cyber Threat Intelligence is the investigation, collection, analysis and dissemination of information about emerging threats and threat sources to provide data about the external threat landscape
-So the difference between these two is: Security Intelligence is looking INWARD (how are our systems looking), while Cyber Threat Intelligence is looking OUTWARD (what are the attacker groups up to, what are the malware outbreaks or zero-day exploits.</description>
+      <description>Security Intelligence is the process where data is generated and is then collected, processed, analyzed, and disseminated to provide insights into the security status of information systems Cyber Threat Intelligence is the investigation, collection, analysis and dissemination of information about emerging threats and threat sources to provide data about the external threat landscape&#xA;So the difference between these two is: Security Intelligence is looking INWARD (how are our systems looking), while Cyber Threat Intelligence is looking OUTWARD (what are the attacker groups up to, what are the malware outbreaks or zero-day exploits.</description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence_sources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence_sources/</guid>
-      <description>We have to identify some factors to weigh the value of the intelligence that we are getting:
-Timeliness (ensures an intel source is up-to-date) Relevancy (ensures an intel source matches its intended use case) Accuracy (ensures an intel source produces effective results. IE: the information needs to be valid &amp;amp; true. Eliminating false positives is important.) Confidence level (ensures an intel source produces qualified statements about reliability. &amp;ldquo;Putting a grade on how good this information is&amp;rdquo;) The three place where you can get information from is:</description>
+      <description>We have to identify some factors to weigh the value of the intelligence that we are getting:&#xA;Timeliness (ensures an intel source is up-to-date) Relevancy (ensures an intel source matches its intended use case) Accuracy (ensures an intel source produces effective results. IE: the information needs to be valid &amp;amp; true. Eliminating false positives is important.) Confidence level (ensures an intel source produces qualified statements about reliability. &amp;ldquo;Putting a grade on how good this information is&amp;rdquo;) The three place where you can get information from is:</description>
     </item>
-    
     <item>
       <title></title>
       <link>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</guid>
-      <description>Intelligence is a process
-Requirements (Planning &amp;amp; Direction) Sets out the goals for the intelligence gathering effort (what do we wanna collec? what do we care about?)
-Collection &amp;amp; Processing Implemented by software tools such as SIEMS to gather data which is then processed for later analysis.
-The processing part is where we will convert all the data into a standard format.
-Analysis Performed against the given use cases from the planning phase and may utilize automated analysis, AI, and machine learning.</description>
+      <description>Intelligence is a process&#xA;Requirements (Planning &amp;amp; Direction) Sets out the goals for the intelligence gathering effort (what do we wanna collec? what do we care about?)&#xA;Collection &amp;amp; Processing Implemented by software tools such as SIEMS to gather data which is then processed for later analysis.&#xA;The processing part is where we will convert all the data into a standard format.&#xA;Analysis Performed against the given use cases from the planning phase and may utilize automated analysis, AI, and machine learning.</description>
     </item>
-    
   </channel>
 </rss>

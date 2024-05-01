@@ -4,7 +4,8 @@
     <title>web on Bxg7 Pentesting Docs</title>
     <link>http://localhost/web/</link>
     <description>Recent content in web on Bxg7 Pentesting Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/web/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost/web/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

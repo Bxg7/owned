@@ -4,23 +4,15 @@
     <title>Bxg7 Pentesting Docs</title>
     <link>http://localhost/cryptography/strong_encryption/</link>
     <description>Recent content on Bxg7 Pentesting Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost/cryptography/strong_encryption/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost/cryptography/strong_encryption/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AES &amp; Padding Oracle Attack</title>
       <link>http://localhost/cryptography/strong_encryption/aes/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost/cryptography/strong_encryption/aes/</guid>
-      <description>Under construction&amp;hellip;
-https://crypto.stackexchange.com/questions/3714/how-does-a-padding-oracle-attack-work https://resources.infosecinstitute.com/padding-oracle-attack-2/#gref https://tlseminar.github.io/padding-oracle/
-https://thebestvpn.com/advanced-encryption-standard-aes/
-https://www.youtube.com/watch?v=1sdOaXTUGa4 https://robertheaton.com/2013/07/29/padding-oracle-attack/ https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth https://erlend.oftedal.no/blog/poet/
-x=1 ^ y=1 = 0 x=1 ^ y=0 = 1 x=0 ^ y=0 = 0 x=0 ^ y=1 = 1
-An intuitive way of understanding why XOR is associative is as follows:
-First recognize that XOR is commutative, that is, a⊕b=b⊕a. This can be done using a truth table.
-Then, think of the XOR operator as a &amp;lsquo;conditional flip&amp;rsquo; operator, that is think of a⊕b as saying if a is 1, take flipped b as the output, while if a is 0, take b as the output.</description>
+      <description>Under construction&amp;hellip;&#xA;https://crypto.stackexchange.com/questions/3714/how-does-a-padding-oracle-attack-work https://resources.infosecinstitute.com/padding-oracle-attack-2/#gref https://tlseminar.github.io/padding-oracle/&#xA;https://thebestvpn.com/advanced-encryption-standard-aes/&#xA;https://www.youtube.com/watch?v=1sdOaXTUGa4 https://robertheaton.com/2013/07/29/padding-oracle-attack/ https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth https://erlend.oftedal.no/blog/poet/&#xA;x=1 ^ y=1 = 0 x=1 ^ y=0 = 1 x=0 ^ y=0 = 0 x=0 ^ y=1 = 1&#xA;An intuitive way of understanding why XOR is associative is as follows:&#xA;First recognize that XOR is commutative, that is, a⊕b=b⊕a. This can be done using a truth table.&#xA;Then, think of the XOR operator as a &amp;lsquo;conditional flip&amp;rsquo; operator, that is think of a⊕b as saying if a is 1, take flipped b as the output, while if a is 0, take b as the output.</description>
     </item>
-    
   </channel>
 </rss>

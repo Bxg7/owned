@@ -116,6 +116,9 @@
     <loc>http://localhost/web/webapps/session_management_intro/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
   </url><url>
+    <loc>http://localhost/</loc>
+    <lastmod>2024-01-01T22:57:19+07:00</lastmod>
+  </url><url>
     <loc>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/security_controls/</loc>
     <lastmod>2024-01-01T21:09:11+07:00</lastmod>
   </url><url>
@@ -129,9 +132,10 @@
     <lastmod>2024-01-01T22:57:19+07:00</lastmod>
   </url><url>
     <loc>http://localhost/cmp-t-cysa&#43;/threat_intel/intelligence_sources/</loc>
+    <lastmod>2024-01-09T21:07:08+01:00</lastmod>
   </url><url>
     <loc>http://localhost/cmp-t-cysa&#43;/threat_intel/security_intelligence_cycle/</loc>
-    <lastmod>2024-01-01T22:57:19+07:00</lastmod>
+    <lastmod>2024-01-09T21:07:08+01:00</lastmod>
   </url><url>
     <loc>http://localhost/cryptography/ciphers/</loc>
     <lastmod>2023-09-08T09:10:57+07:00</lastmod>
@@ -150,9 +154,6 @@
   </url><url>
     <loc>http://localhost/cmp-t-cysa&#43;/roles_and_responsibilities/cybersecurity_analyst_and_soc/</loc>
     <lastmod>2024-01-01T21:09:11+07:00</lastmod>
-  </url><url>
-    <loc>http://localhost/</loc>
-    <lastmod>2024-01-01T22:57:19+07:00</lastmod>
   </url><url>
     <loc>http://localhost/cmp-t-pentest&#43;/planning/</loc>
     <lastmod>2023-12-28T17:12:46+07:00</lastmod>
