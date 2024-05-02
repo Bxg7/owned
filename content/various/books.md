@@ -21,7 +21,6 @@ date: 2023-01-06
 * Penetration Testing A Hands On Introduction to Hacking  
 * Python Penetration Testing Essentials  
 * RTFM red team field manual
-* TCP IP Guide Oct 2005  
 * The Basics of Hacking and Penetration Testing
 * The Basics of Web Hacking - Tools and Techniques to Attack the Web
 * Understanding Network Hacks_ Attack and Defense With Python
